@@ -1,0 +1,177 @@
+.title {
+  color: goldenrod;
+  font-weight: bold;
+  font-family: yellowtail;
+  font-size: 60px;
+  font-weight: 200;
+  text-align: center;
+  border-style: double;
+  border-radius: 100px;
+  border-color: rgb(54, 2, 2);
+  text-transform: capitalize;
+}
+.teaser {
+  color: rgb(85, 62, 6);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.border-t {
+  border-style: inset;
+  border-color: rgb(54, 2, 2);
+  position: relative;
+  left: -50%;
+  border-radius: -100px;
+  top: -20px;
+}
+.username {
+  font-weight: bold;
+  color: goldenrod;
+  font-style: italic;
+}
+.description {
+  color: white;
+  font-size: 30px;
+  color: brown;
+}
+
+.pic {
+  height: 200px;
+  border-radius: 20px;
+  image-rendering: optimizeQuality;
+}
+
+.pic1,
+.pic2,
+.pic4,
+.pic5,
+.pic6 {
+  display: block;
+  height: 300px;
+  border-radius: 20px;
+  float: left;
+  image-rendering: optimizeQuality;
+  margin-left: 15px;
+}
+.pic1,
+.pic6 {
+  display: block;
+  float: left;
+  width: 5.3cm;
+  height: 340px;
+}
+
+.pic3 {
+  height: 350px;
+  width: 440px;
+}
+em {
+  color: goldenrod;
+  font-style: italic;
+  text-decoration: underline;
+}
+.Biography {
+  font-weight: lighter;
+  color: white;
+}
+.insta-link {
+  color: white;
+  font-weight: bold;
+}
+.fa-instagram {
+  font-size: 1cm;
+  color: white;
+  background-color: rgb(192, 82, 192);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.linkedin-link {
+  color: white;
+  font-weight: bold;
+}
+.fa-linkedin-square {
+  font-size: 1cm;
+  color: blue;
+  margin-right: 10px;
+}
+
+.fusionmng-link {
+  color: white;
+  font-weight: bold;
+}
+
+.fa-male {
+  font-size: 1.5cm;
+  color: rgb(170, 137, 53);
+  margin-right: 10px;
+}
+
+.background1 {
+  background-image: url("https://d2r55xnwy6nx47.cloudfront.net/uploads/2022/01/One_galaxy_1920x1080_STILL_Lede.jpg");
+  width: 220px; /*set the width and height to the width and height of the image */
+  height: 100cm;
+  text-indent: -9999px; /* Move the text inside of the div off screen. Still readable for text-readers for the blind */
+
+  position: absolute;
+  left: 101%; /* Play around with the left attribute until it's placed where you want it */
+  top: -50px;
+}
+.background2 {
+  background-image: url("https://d2r55xnwy6nx47.cloudfront.net/uploads/2022/01/One_galaxy_1920x1080_STILL_Lede.jpg");
+  width: 300px; /*set the width and height to the width and height of the image */
+  height: 100cm;
+  text-indent: -9999px; /* Move the text inside of the div off screen. Still readable for text-readers for the blind */
+
+  position: absolute;
+  right: 101%; /* Play around with the left attribute until it's placed where you want it */
+  top: -50px;
+}
+body {
+  position: relative;
+  background-color: black;
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin-right: 4.5cm;
+  margin-left: 4.5cm;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+h3 {
+  color: white;
+  text-decoration: dashed;
+}
+
+.italian {
+  height: 350px;
+}
+
+.container {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 0px;
+  position: relative;
+  text-align: center;
+}
+.forz {
+  font-size: 100px;
+  color: green;
+  margin-right: -20px;
+  text-decoration: underline;
+}
+
+.ait {
+  font-size: 100px;
+  color: white;
+  margin-right: -20px;
+  text-decoration: underline;
+}
+.alia {
+  font-size: 100px;
+  color: red;
+  text-decoration: underline;
+}

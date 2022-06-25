@@ -1,0 +1,222 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  font-family: yellowtail;
+  align-content:space-between;
+  align-items: center;
+}
+
+.showcase{
+  position: absolute;
+  right: 0;
+  width: auto;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  background: blue;
+  transition: 0.5s;
+}
+
+.showcase.active{
+  right: 200px;
+}
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  mix-blend-mode: overlay;
+}
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px; 
+  cursor: pointer;
+  background-position: center;
+  background-image: url(menu.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.toggle.active{
+  background-position: center;
+  background-image: url(closemenu.png);
+} 
+
+.logo{
+  font-size: 20px;
+}
+
+.text{
+  position: relative;
+  z-index: 10;
+}
+
+.text h1 {
+  color: goldenrod;
+  font-size: 4em;
+  font-weight: 200;
+  text-align: center;
+  border-style: double;
+  border-radius: 100px;
+  border-color: rgb(54, 2, 2);
+  margin-top: 150px;
+}
+
+.text h2 {
+  text-decoration: underline;
+  position: relative;
+  top: 100;
+  font-size: 3em;
+}
+
+.text h3 {
+  color: black;
+  text-decoration: dashed;
+  font-size: 2em;
+}
+
+.text p{
+  font-size: 1.5em;
+  max-width: 1000;
+}
+
+.text a{
+  display: inline-block;
+  font-size: 2em;
+  background-color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 150px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+.socials {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  height: 100px;
+  width: 100px;
+  bottom: 0;
+  left: 0;
+}
+
+.socials li {
+  list-style: none;
+}
+
+.socials li a {
+  display: inline-block;
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 24px;
+}
+
+.menu ul{
+  position: relative;
+  list-style: none;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu ul li a:hover{
+  color: yellow;
+}
+
+@media(max-width: 991px) {
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+
+  .text h1{
+    font-size: 3em;
+  }
+  .text h2{
+    font-size: 2em;
+  }
+  .text h3{
+    font-size: 2em;
+  }
+}
+/* .flagpng {
+  height: 350px;
+}
+
+.itaflag {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 0px;
+  position: relative;
+  text-align: center;
+}
+.forz {
+  font-size: 100px;
+  color: green;
+  margin-right: -20px;
+  text-decoration: underline;
+}
+
+.ait {
+  font-size: 100px;
+  color: white;
+  margin-right: -20px;
+  text-decoration: underline;
+}
+.alia {
+  font-size: 100px;
+  color: red;
+  text-decoration: underline;
+} */

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <link rel="stylesheet" href="CSSmodel.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediaPreneur Official</title>
+  </head>
+
+  <body>
+    <div class="showcase active">
+      <header>
+        <h1 class="logo">MediaPreneur</h1>
+        <div class="toggle active"></div>
+      </header>
+
+      <video src="background.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h1>Welcome to MediaPreneur!</h1>
+        <h2>Introduction and Certifications</h2>
+        <h3>
+          i'm SIMONE PERFETTO, from ITALY. Your Adept Personal CopyWriter
+          <br />
+          Witness exponential increase of traffic to your Business page or
+          Channel in NO TIME!
+        </h3>
+        <br />
+        <p>
+          I have two degrees: <br />
+          Bachelor's degree in Physics with honors @ University of Portsmouth
+          <br />Master's in Mechatronic Systems Engineering and Engineering
+          Management @ University of Bolton. You are in GOOD HANDS.
+        </p>
+        <a href="#">Explore</a>
+      </div>
+
+      <ul class="socials">
+        <li>
+          <a href="#">
+            <img
+              id="img"
+              src="facebook.png"
+              style="height: 10vh; width: auto"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              id="img"
+              src="instagram.png"
+              style="height: 10vh; width: auto"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              id="img"
+              src="linkedin.png"
+              style="height: 10vh; width: auto"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img id="img" src="youtube.png" style="height: 10vh; width: auto" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu">
+      <ul>
+        <il> <a href="#">HOME</a></il>
+        <il> <a href="#">GYM</a></il>
+        <il> <a href="#">BLOG</a></il>
+        <il> <a href="#">SHOP</a></il>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+    <!-- BODY OF THE WEBSITE -->
+    <!--
+      <img class="pic1" src="pic (9).jpg" alt="pictures failed to upload" />
+      <img class="pic2" src="pic (11).jpg" alt="pictures failed to upload" />
+      <img class="pic3" src="pic (10).jpg" alt="pictures failed to upload" /> 
+        <img class="pic5" src="pic (3).jpg" alt="pictures failed to upload" /> 
+      <img class="pic4" src="pic (12).jpg" alt="pictures failed to upload" />
+      <img class="pic6" src="pic99.jpg" alt="pictures failed to upload" style="margin-right: 450px;" />
+      -->
+    <hr />
+
+    <!-- <div class="itaflag">
+        <img
+          src="https://www.worldatlas.com/r/w960-q80/upload/20/07/2a/shutterstock-152854481.jpg"
+          alt="italian flag"
+          class="flagpng"
+        />
+        <img class="pic3" src="pic (10).jpg" alt="pictures failed to upload" /> 
+
+        <br />
+
+        <span class="forz"> Forz </span>
+        <span class="ait"> a It </span>
+        <span class="alia"> alia ! </span>
+      </div> -->
+  </body>
+</html>

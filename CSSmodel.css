@@ -10,7 +10,7 @@
   right: 0;
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,7 @@
 }
 
 .showcase.active{
-  right: 200px;
+  right: 150px;
 }
 
 .showcase header {
@@ -27,7 +27,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 40px 50px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@
 }
 
 .overlay {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -44,14 +44,13 @@
   mix-blend-mode: overlay;
 }
 .showcase video {
-  position: fixed;
+  position: absolute;
   min-width: 100%;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-bottom: 200px;
 }
 
 .toggle {
@@ -72,7 +71,7 @@
 .toggle.active{
   background-position: center;
   background-image: url(closemenu.png);
-  background-size: 50%;
+  background-size: 80%;
 } 
 
 .logo{
@@ -107,7 +106,7 @@
   border-width: 10px;
   border-color: rgb(23, 25, 184);
   text-shadow: 2.5px 2.5px blue;
-  max-width: 80%;
+  max-width: 70%;
   margin-bottom: 2px;
 }
 
@@ -133,7 +132,7 @@
   display: inline-block;
   font-size: 2em;
   background-color: white;
-  padding: 10px px;
+  padding: 10px 10px;
   text-decoration: none;
   color: rgb(248, 180, 8);
   margin-bottom: 80px;
@@ -173,12 +172,11 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 200px;
+  width: 150px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
 }
 
 .menu ul{
@@ -197,18 +195,27 @@
 }
 
 @media(max-width: 991px) {
-  .showcase,
-  .showcase header {
-    margin: 40px;
+  .showcase{
+    padding: -30px;
+    
   }
+ 
   
+  .text h2.welcome{
+    font-size: 3em;
+    max-width: 300px;
+  }
   .text h1{
-    font-size: 4em;
-    max-width: 500px;
+    font-size: 3em;
+    max-width: 300px;
+  }
+  .text h2.dream{
+    font-size: 2em;
+    max-width: 250px;
   }
   .text h2.copywriter{
-    font-size: 3em;
-    max-width: 80%;
+    font-size: 2em;
+    max-width: 250px;
   }
  
 }

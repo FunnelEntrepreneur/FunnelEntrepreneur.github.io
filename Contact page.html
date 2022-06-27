@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="eng">
-
   <head>
-      <link rel="stylesheet" href="ContactCss.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="ContactCss.css" />
+  </head>
+  <body>
+    <header>
       <h1>
         SEND ME AN EMAIL <br />
         I REPLY UNDER 24 HOURS!
       </h1>
-      <div class="container">
-  </head>
-    <body>
-        <form action="https://formsubmit.co/funnelcreate@media-preneur.com" method="post" enctype="text/plain">
+    </header>
+    <div class="background"></div>
+    <center>
+      <form>
+        <!-- <form
+      action="https://formsubmit.co/funnelcreate@media-preneur.com"
+      method="post"
+      enctype="text/plain"
+    > -->
+        <div class="email">
           <label for="fname">First Name:</label>
           <input
             type="text"
             id="fname"
             name="firstname"
             placeholder="Your name.."
+            required
           />
+        </div>
+        <div class="email">
           <label for="lname">Last Name:</label>
           <input
+            required
             type="text"
             id="lname"
             name="lastname"
             placeholder="Your last name.."
           />
+        </div>
+        <div class="email">
           <label for="country">Country:</label>
           <input
+            required
             type="text"
             id="country"
             name="country"
             placeholder="What Country are you from?"
           />
+        </div>
+        <div class="email">
           <label for="subject">Email:</label>
-          <input type="text" name="name">
+          <input type="text" name="emal" placeholder="example@domain.com" />
+        </div>
+        <div class="email">
           <label for="subject">Subject:</label>
           <textarea
+            required
             id="subject"
             name="subject"
-            placeholder="Write something.."
+            placeholder="Your Message"
             style="height: 200px"
           ></textarea>
-          <input type="submit" value="Submit" />
-        </form>
-          </div>
-    </body>
-    <div class="overlay"></div>
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </center>
+  </body>
 </html>

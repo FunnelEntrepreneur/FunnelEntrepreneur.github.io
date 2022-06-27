@@ -9,7 +9,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     padding: 200px;
     display: flex;
@@ -64,38 +64,10 @@
     background-image: url(logo.png);
     background-size: 100%;  
 }
-  
-
-
-.menu{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu ul{
-    position: relative;
-    list-style: none;
-}
-
-.menu ul li a{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-}
-
-.menu ul li a:hover{
-    color: blue;
-}
 
 .showcase video {
-    position: absolute;
-    min-width: 100%;
+    position: fixed;
+    max-width: 100%;
     top: 0;
     left: 0;
     width: 100%;
@@ -104,71 +76,113 @@
   }
 
 .title{
-    top: 0;
-    z-index: 3;
-}
-.title h1{
     z-index: 3;
     font-size: 3em;
     text-align: center;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
 }
 
+.me, .text{
+    left: -110px;
+}
 .text{
-    background-color: goldenrod;
+    background-image: radial-gradient(rgb(202, 174, 17), rgb(224, 18, 18));
     position: relative;
     display: inline-block;
-    padding: 0px 40px;
-    width: 80%
+    padding: 20px 70px;
+    max-width: 100%;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.text h2{
+    width: 200px;
+}
+
+h2.message{
+    font-size: 1.7em;
+    text-align: center;
+    width: 500px;
+    background-image: radial-gradient(rgb(5, 81, 126), rgb(9, 9, 126));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
 }
 
 .text h3{
-    font-size: 1.5em;
-    font-weight:400;
+    width: 400px;;
 }
 .me{
     position: relative;
     align-items: center;
-    top: 20%%;
+    top: 20%;
     max-height: 800px;
     margin-right: 10px;
     z-index: 100;
+    border: 5px solid rgba(0, 0, 255, 0.425);
+    border-radius: 10px;
 }
 
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
     min-height: 100vh;
     bottom: 0;
     background-color: rgb(87, 149, 241);
     mix-blend-mode: overlay;
+    object-fit: cover;
   }
   h3{
     position: relative;
   }
 
-  @media(max-width: 991px) {
+  @media(max-width: 1200px) {
     .showcase{
-      padding: -30px;
-      
+        position: absolute;
+    }
+  
+    .logo{
+      height: 50px;
+      width: 60px;
+    } 
+
+    
+
+    .text{
+        position: absolute;
+        height: 450px;
+        left: 40%;
+        width: 250px;
+    }
+    h1.meet{
+        position: relative;
+        font-size: 20px;
+        width: 200px;
+        right: 40px;
+        top: -20px;
+    }
+    h3.quote{
+        position: relative;
+        font-size: 10px;
+        width: 160px;
+        top: -10px;
+    }
+    h2.message{
+        position: relative;
+        font-size: 10px;
+        width: 180px;
+        margin-top: 25px;
+        right: 30px;
     }
 
-    .me {
-        max-width: 400px;
-
+    .me{
+        position: absolute;
+        height: auto;
+        width: 190px;
+        top: 30%;
+        left: 6%;
     }
-   
-    h1{
-      font-size: 3em;
-      max-width: 300px;
-    }
-    h3{
-      font-size: 3em;
-      max-width: 300px;
-    }
-   
-   
+  }

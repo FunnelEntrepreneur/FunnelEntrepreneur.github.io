@@ -7,7 +7,7 @@
 .background{
   position: fixed;
   top: 0;
-  background-image: linear-gradient(rgba(0,0,0,0.7), #859cf1), url(beach.png);
+  background-image: linear-gradient(rgba(0,0,0,0.7), #859cf1), url(water.jpg);
   min-width: 100%;
   min-height: 100vh;
 }
@@ -41,14 +41,18 @@ input, textarea{
   
 }
 
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
 label{
   position: relative;
   display: flex;
   font-size: 25px;
-  font-weight: 600;
-  background: -webkit-linear-gradient(rgb(58, 54, 54), yellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 200;
+  
 }
 
 button{
@@ -67,4 +71,9 @@ button:hover{
   background-color: #a59f6e;
   transform: translateY(-5px);
 
+}
+
+.fas fa-user{
+  font-size: 10px;
+  margin-right: 60px;
 }

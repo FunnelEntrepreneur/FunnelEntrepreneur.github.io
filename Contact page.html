@@ -21,10 +21,11 @@
     <div class="background"></div>
     <center>
       <form
-        onsubmit="sendEmail(); reset(); return False"
+        action="https://formsubmit.co/funnelcreate@media-preneur.com"
         method="post"
-        enctype="text/plain"
       >
+        <input type="text" name="_honey" style="display: none" />
+        <input type="hidden" name="_captcha" value="false" />
         <div class="row">
           <div class="contact">
             <label for="fname"><i class="far fa-user"></i>Full Name:</label>
@@ -82,34 +83,5 @@
         <button id="btn" type="submit">SUBMIT</button>
       </form>
     </center>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      var btn = document.getElementById("btn");
-      btn.addEventListener("click", function (sendEmail()) {
-        sendEmail().preventDefault();
-        Email.send({
-          Host: "smtp.media-preneur.com",
-          Username: "funnelcreate@media-preneur.com",
-          Password: "3C752FE51711F6CBA0860F0C06F70E23EFEB",
-          SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
-          To: "funnelcreate@media-preneur.com",
-          From: document.getElementById("email").value,
-          Subject: "New Customer Enquiry",
-          Body:
-            "Name: " +
-            document.getElementById("fname").value +
-            "<br> Country: " +
-            document.getElementById("phone").value +
-            "<br> Phone: " +
-            document.getElementById("country").value +
-            "<br> Message: " +
-            document.getElementById("subject").value,
-        }).then((message) =>
-          alert(
-            "Thank You! Message Sent Successfully. Will reply back sooner than you think!"
-          )
-        );
-      });
-    </script>
   </body>
 </html>

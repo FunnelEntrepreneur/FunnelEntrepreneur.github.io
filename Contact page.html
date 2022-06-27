@@ -79,12 +79,14 @@
             style="height: 200px"
           ></textarea>
         </div>
-        <button type="submit">SUBMIT</button>
+        <button id="btn" type="submit">SUBMIT</button>
       </form>
     </center>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-      function sendEmail() {
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", function (sendEmail()) {
+        sendEmail().preventDefault();
         Email.send({
           Host: "smtp.media-preneur.com",
           Username: "funnelcreate@media-preneur.com",
@@ -107,7 +109,7 @@
             "Thank You! Message Sent Successfully. Will reply back sooner than you think!"
           )
         );
-      }
+      });
     </script>
   </body>
 </html>

@@ -21,12 +21,12 @@
     <div class="background"></div>
     <center>
       <form
-        action="https://mail.google.com/mail/u/0/#inbox"
+        onsubmit="sendEmail(); reset(); return False"
         method="post"
         enctype="text/plain"
       >
         <div class="row">
-          <div class="email">
+          <div class="contact">
             <label for="fname"><i class="far fa-user"></i>Full Name:</label>
             <input
               type="text"
@@ -36,8 +36,8 @@
               required
             />
           </div>
-          <div class="email">
-            <label for="number"
+          <div class="contact">
+            <label for="email"
               ><i class="fa-solid fa-phone"></i>Phone Number:</label
             >
             <input
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="email">
+        <div class="contact">
           <label for="country">
             <i class="fa-solid fa-earth-europe"></i>Country:</label
           >
@@ -62,7 +62,7 @@
             placeholder="What Country are you from?"
           />
         </div>
-        <div class="email">
+        <div class="contact">
           <label for="subject"
             ><i class="fa-solid fa-envelope-open-text"></i>Email:</label
           >
@@ -82,5 +82,32 @@
         <button type="submit">SUBMIT</button>
       </form>
     </center>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.media-preneur.com",
+          Username: "funnelcreate@media-preneur.com",
+          Password: "3C752FE51711F6CBA0860F0C06F70E23EFEB",
+          SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
+          To: "funnelcreate@media-preneur.com",
+          From: document.getElementById("email").value,
+          Subject: "New Customer Enquiry",
+          Body:
+            "Name: " +
+            document.getElementById("fname").value +
+            "<br> Country: " +
+            document.getElementById("phone").value +
+            "<br> Phone: " +
+            document.getElementById("country").value +
+            "<br> Message: " +
+            document.getElementById("subject").value,
+        }).then((message) =>
+          alert(
+            "Thank You! Message Sent Successfully. Will reply back sooner than you think!"
+          )
+        );
+      }
+    </script>
   </body>
 </html>

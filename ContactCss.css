@@ -36,16 +36,17 @@ input, textarea{
   border: 1px solid;
   background: transparent;
   font-size: 20px;
-  background: -webkit-linear-gradient(goldenrod, rgb(86, 86, 224));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: white;
+  background: linear-gradient(goldenrod, rgb(86, 86, 224));
+  background-clip: text;
+  
 }
 
 label{
   position: relative;
+  display: flex;
   font-size: 25px;
-  background: -webkit-linear-gradient(black, blue);
+  font-weight: 600;
+  background: -webkit-linear-gradient(rgb(58, 54, 54), yellow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

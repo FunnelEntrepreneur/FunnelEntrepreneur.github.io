@@ -92,10 +92,10 @@
 }
 
 .text h2.welcome{
-  background-image: linear-gradient(rgb(250, 251, 252), rgb(74, 138, 235), rgb(240, 245, 247));
+  background-image: linear-gradient(rgb(6, 6, 109), rgb(74, 138, 235), rgb(6, 6, 109));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: rgb(156, 138, 33);
+  -webkit-text-stroke-color: rgb(187, 6, 6);
   -webkit-text-stroke-width: 1px;
   font-size: 6em;
   font-weight: 200;
@@ -107,7 +107,7 @@
   font-weight: 600;
   font-size: 8em;
   -webkit-text-stroke-color: rgb(156, 138, 33);
-  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-width: 1.8px;
   text-align: center;
   max-width: 100%;
   margin-bottom: 2px;
@@ -121,19 +121,19 @@
   background-image: linear-gradient(rgb(224, 13, 13), rgba(50, 9, 236, 0.692));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
--webkit-text-stroke-color: rgb(134, 5, 5);
-  -webkit-text-stroke-width: 1px;}
+-webkit-text-stroke-color: rgb(68, 6, 241);
+  -webkit-text-stroke-width: 0.7px;}
 
 .text h2.copywriter {
   position: relative;
   font-size: 3em;
   font-weight: 600;
   width: 1000px;
-  background-image: linear-gradient(rgb(67, 218, 245),rgb(4, 34, 78), rgb(79, 202, 250));
+  background-image: linear-gradient(rgb(6, 6, 109), rgb(74, 138, 235), rgb(6, 6, 109));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: rgb(235, 212, 8);
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(160, 7, 7);
+  -webkit-text-stroke-width: 1px;
 }
 
 

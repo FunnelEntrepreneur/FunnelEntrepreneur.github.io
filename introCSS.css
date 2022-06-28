@@ -123,17 +123,6 @@ h2.message{
     border: 5px solid rgba(0, 0, 255, 0.425);
     border-radius: 10px;
 }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    min-height: 100vh;
-    bottom: 0;
-    background-color: rgb(87, 149, 241);
-    mix-blend-mode: overlay;
-    object-fit: cover;
   }
   h3{
     position: relative;
@@ -147,6 +136,7 @@ h2.message{
     .background{
         position: absolute;
         width: 200px;
+        min-height: 100vh;
     }
 
 

@@ -145,9 +145,16 @@ h2.message{
         position: absolute;
     }
   
+    .background{
+        position: absolute;
+        width: 200px;
+    }
+
+
     .logo{
-      height: 50px;
-      width: 60px;
+      height: 40px;
+      width: 50px;
+      top: -20px;
     } 
 
     
@@ -157,6 +164,8 @@ h2.message{
         height: 450px;
         left: 40%;
         width: 250px;
+        top: 100px;
+
     }
     h1.meet{
         position: relative;
@@ -183,8 +192,8 @@ h2.message{
     .me{
         position: absolute;
         height: auto;
-        width: 190px;
-        top: 30%;
+        width: 170px;
+        top: 20%;
         left: 6%;
     }
   }

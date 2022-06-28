@@ -92,16 +92,16 @@
 }
 
 .text h2.welcome{
-  background-image: linear-gradient(rgba(39, 14, 150, 0.692), rgb(248, 248, 10));
+  background-image: linear-gradient(rgb(250, 251, 252), rgb(74, 138, 235), rgb(240, 245, 247));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: rgb(156, 138, 33);
-  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-width: 1px;
   font-size: 6em;
   font-weight: 200;
 }
 .text h1 {
-  background-image: linear-gradient(rgb(248, 248, 10), rgba(50, 9, 236, 0.692));
+  background-image: linear-gradient(rgb(236, 96, 96), rgba(50, 9, 236, 0.692));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   font-weight: 600;
@@ -118,7 +118,7 @@
   font-size: 4em;
   font-weight: 800;
   width: 500px;
-  background-image: radial-gradient(rgb(202, 174, 17), rgb(11, 11, 250));
+  background-image: linear-gradient(rgb(250, 251, 252), rgb(74, 138, 235), rgb(240, 245, 247));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 -webkit-text-stroke-color: rgb(134, 5, 5);
@@ -126,13 +126,13 @@
 
 .text h2.copywriter {
   position: relative;
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 600;
   width: 1000px;
-  background-image: linear-gradient(rgb(211, 8, 8),rgb(4, 4, 78), rgb(122, 7, 7));
+  background-image: linear-gradient(rgb(67, 218, 245),rgb(4, 34, 78), rgb(79, 202, 250));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: rgb(235, 201, 8);
+  -webkit-text-stroke-color: rgb(8, 201, 235);
   -webkit-text-stroke-width: 0px;
 }
 
@@ -230,10 +230,9 @@
   } 
 
   .text{
-    left: -130px;
+    left: -10px;
     top: -100px;
-    width: 480px;
-    max-width: 100%;
+    width: 800px;
   }
   .text h1, .text h2.welcome{
     font-size: 2em;

@@ -161,7 +161,7 @@ h2.message{
 
     .text{
         position: absolute;
-        height: 650px;
+        height: 550px;
         left: 35%;
         width: 250px;
         top: 70px;
@@ -185,7 +185,7 @@ h2.message{
         font-size: 15px;
         width: 250px;
         margin-top: 15px;
-        right: 90px;
+        right: 75px;
         -webkit-text-stroke-color: transparent;
     }
 

@@ -236,10 +236,7 @@
   }
   .text h1, .text h2.welcome{
     font-size: 2em;
-    -webkit-text-stroke-width: 1px;
-    background-image: linear-gradient(rgb(248, 248, 10), rgba(50, 9, 236, 0.692));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 0.5px;
     z-index: 10;
     }
   .text a{

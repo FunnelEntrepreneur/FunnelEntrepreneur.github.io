@@ -101,7 +101,7 @@
   font-weight: 200;
 }
 .text h1 {
-  background-image: linear-gradient(rgb(236, 96, 96), rgba(50, 9, 236, 0.692));
+  background-image: linear-gradient(rgb(224, 13, 13), rgba(50, 9, 236, 0.692));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   font-weight: 600;
@@ -118,7 +118,7 @@
   font-size: 4em;
   font-weight: 800;
   width: 500px;
-  background-image: linear-gradient(rgb(236, 96, 96), rgba(50, 9, 236, 0.692));
+  background-image: linear-gradient(rgb(224, 13, 13), rgba(50, 9, 236, 0.692));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 -webkit-text-stroke-color: rgb(134, 5, 5);

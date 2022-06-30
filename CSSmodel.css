@@ -295,23 +295,17 @@ footer {
 
   .overlay1, .showcase video{
     top: 0px;
-    height: 53%;
+    height: 47%;
     max-width: 100%;
     z-index: 1;
   }
   .overlay2{
-    top: 53%;
+    top: 47%;
     max-width: 100%;
     height: 47%;
     background-image: linear-gradient(rgba(0,0,0,0.8), #859cf186), url(beach.jpg);
   }
 
-  footer, footer.property{
-    top: 99%;
-    height: 17%;
-    z-index: 3;
-  }
- 
   .text{
     position: relative;
     width: 800px;
@@ -319,7 +313,7 @@ footer {
   .text h1, .text h2.welcome{
     -webkit-text-stroke-width: 0.6px;
     font-size: 2.5em;
-    margin: 150px;
+    margin: 130px;
   }
 
   .leads{
@@ -329,7 +323,7 @@ footer {
   }
   .buttons{
     font-size: 0.5em;
-    margin-bottom: 200px;
+    margin-bottom: 180px;
   }
   
   .dream, .copywriter{
@@ -339,8 +333,8 @@ footer {
   }
 
   .dream{
-    margin-bottom: 190px;
-    font-size: 2em;
+    margin-bottom: 260px;
+    font-size: 1.8em;
   }
 
   .copywriter{
@@ -372,6 +366,17 @@ footer {
     margin: 30px;
   }
 
+  footer{
+    top: 91%;
+    height: 12%;
+    z-index: 3;
+  }
+  .property{
+    position: relative;
+    left: 15%;
+    width: 300px;
+  }
+ 
 }
   /* FOR ITALIAN FLAG */
 /* .flagpng {

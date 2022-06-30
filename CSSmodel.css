@@ -7,7 +7,7 @@
 
 .showcase{
   position: absolute;
-  top: 0;
+  top: -10%;
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -19,61 +19,56 @@
   z-index: 2;
 }
 
-.showcase.active{
-  right: 150px;
+.email, i{
+  background-image: linear-gradient(rgb(224, 174, 48), rgb(103, 114, 219), rgb(247, 180, 11));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: rgb(156, 5, 5); 
 }
 
 .showcase header {
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 100%;
-  padding: 80px;
+  padding: 60px;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.overlay {
+.overlay1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(48, 112, 207);
+  min-width: 100%;
+  height: 44%;
+  background-image: linear-gradient(yellow, rgb(30, 30, 218), rgb(143, 7, 7));
+  opacity: 0.8;
   mix-blend-mode: overlay;
 }
+.overlay2 {
+  position: absolute;
+  height: 40%;
+  min-width: 100%;
+  left: 0;
+  top: 44%;
+  background-image: linear-gradient(rgba(0,0,0,0.8), #859cf1), url(beach.jpg);
+  background-size: cover;
+}
+
+
 .showcase video {
   position: absolute;
   min-width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  height: 44%;
   object-fit: cover;
 }
 
-.toggle {
-  border-style: double;
-  border-radius: 100px;
-  border-width: 7px;
-  border-color: rgb(23, 25, 184);
-  position: relative;
-  width: 110px;
-  height: 100px; 
-  cursor: pointer;
-  background-position: center;
-  background-image: url(menu.png);
-  background-size: 50%;
-  background-repeat: no-repeat;
-}
-
-.toggle.active{
-  background-position: center;
-  background-image: url(closemenu.png);
-  background-size: 80%;
-} 
 
 .logo{
   position: relative;
@@ -82,77 +77,80 @@
   background-position: center;
   background-image: url(logo.png);
   background-size: 100%;  
-  /* animation: spin 1.5s linear infinite; */
+  animation: spin 5s linear infinite;
 }
 
 @keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
+  /* 100%{-webkit-transform: rotate(360deg);} */
 }
 
 .text{
-  left: 5%;  
+  display: block;
   position: relative;
   z-index: 10;
-  margin-bottom: 80px;
+  top: -100px;
 }
 
-.text h2.welcome{
+.welcome{
   background-image: linear-gradient(rgb(6, 6, 109), rgb(74, 138, 235), rgb(6, 6, 109));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: rgb(187, 6, 6);
-  -webkit-text-stroke-width: 1px;
-  font-size: 6em;
+  -webkit-text-stroke-color: rgb(68, 6, 241);
+  -webkit-text-stroke-width: 1.5px;
+  font-size: 4em;
   font-weight: 200;
+  margin-bottom: -60px;
 }
 .text h1 {
-  background-image: linear-gradient(rgb(224, 13, 13), rgba(50, 9, 236, 0.692));
+  background-image: linear-gradient(rgb(248, 183, 17), rgb(255, 255, 246), rgb(247, 180, 11));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-color: rgb(99, 4, 4);
+  -webkit-text-stroke-width: 1.3px;
   font-weight: 600;
-  font-size: 8em;
-  -webkit-text-stroke-color: rgb(156, 138, 33);
-  -webkit-text-stroke-width: 1.8px;
+  font-size: 6em;
+  animation: fadeIn 1s;
+  margin-bottom: 10%;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  70% { opacity: 0; transform: translateX(-30px);}
+  100% { opacity: 1; }
+}
+
+.leads{
+  position: relative;
   text-align: center;
-  max-width: 100%;
-  margin-bottom: 2px;
-}
-
-.text h2.dream {
-  position: relative;
-  font-size: 4em;
-  font-weight: 800;
-  width: 500px;
-  background-image: linear-gradient(rgb(224, 13, 13), rgba(50, 9, 236, 0.692));
+  top: 20%;
+  font-size: 5em;
+  background-image: linear-gradient(rgb(248, 183, 17), rgb(255, 255, 246), rgb(247, 180, 11));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
--webkit-text-stroke-color: rgb(68, 6, 241);
-  -webkit-text-stroke-width: 0.7px;}
-
-.text h2.copywriter {
-  position: relative;
-  font-size: 3em;
-  font-weight: 600;
-  width: 1000px;
-  background-image: linear-gradient(rgb(6, 6, 109), rgb(74, 138, 235), rgb(6, 6, 109));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: rgb(160, 7, 7);
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(68, 6, 241);
+  -webkit-text-stroke-width: 1.5px;
+  margin-bottom: -0.3%;
+  animation: fadeIn 2s;
 }
 
+.buttons{
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.buttons.contact{
+  margin-right: 150px; 
+  margin-left: 150px;
+}
 
 .text a{
-  display: inline-block;
-  font-size: 2em;
-  background-image: linear-gradient(rgb(240, 16, 16), white,rgb(67, 67, 230));
-  padding: 10px 15px;
+  font-size: 1.5em;
+  background-image: linear-gradient(rgb(51, 51, 185), rgb(182, 196, 218), rgb(6, 2, 31));
+  padding: 5px;
   text-decoration: none;
-  color: rgb(248, 180, 8);
-  margin-bottom: 80px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 2px 1.2px rgb(5, 5, 245);
+  color: rgb(143, 109, 23);
   border-radius: 100px;
   border-color: rgb(24, 24, 209);
   border-width: 7px;
@@ -160,33 +158,61 @@
 }
 
 .text a:hover {
-  transform: scale(1.2) translateY(-10px);}
-
-.socials {
-  position: absolute;
-  bottom: 15%;
-  left: 15%;
-  z-index: 1;
-  display: flex;
-  height: 100px;
-  justify-items: center;
-  align-items: center;
+  transform: scale(0.7) translateY(-10px);
 }
 
+.dream {
+  position: relative;
+  font-size: 5em;
+  font-weight: 800;
+  width: 800px;
+  background-image: linear-gradient(rgb(6, 6, 109), rgb(74, 138, 235), rgb(6, 6, 109));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: rgb(68, 6, 241);
+  -webkit-text-stroke-width: 1px;
+  animation: fadeIn 1s;
+}
+
+.copywriter {
+  position: relative;
+  text-align: end;
+  width: 1000px;
+  font-size: 2.5em;
+  font-weight: 600;
+  background-image: linear-gradient(rgba(50, 9, 236, 0.692), rgb(224, 13, 13), rgba(50, 9, 236, 0.692));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: rgb(175, 150, 9);
+  -webkit-text-stroke-width: 0.6px;
+  animation: fadeIn 0.1s;
+}
+@keyframes scroll{
+  0%{ transform: translateY(-800px);}
+  100%{transform: translateY(450px);}
+}
+
+.slide{
+  max-height: 900px;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  left: -15px;
+  top: 20%;
+  width: auto;
+}
 .socials li {
   list-style: none;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .socials li a {
   display: inline-block;
-  margin-right: 10px;
-  transform: scale(0.5);
-  transition: 0.1s;
+  margin: 80px;
+  animation: scroll 6s linear infinite;
 }
 
-.socials li a:hover {
-  transform: scale(0.7 ) translateY(-5px);
-}
 
 .menu{
   position: absolute;
@@ -214,58 +240,148 @@
   color: blue;
 }
 
+footer {
+  position: absolute;
+  height: 16%;
+  min-width: 100%;
+  left: 0;
+  top: 84%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), #050607);
+}
+.property h3.tailored{
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  border-style:ridge;
+  border-radius: 100px;
+  border-width: 6px;
+  border-color: rgb(102, 75, 5);
+  background-image: linear-gradient(rgb(102, 75, 5), rgb(184, 163, 72), rgb(102, 75, 5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   text-align: center;
+  font-size: 1.7em;
+  -webkit-text-stroke-color: rgb(145, 7, 7);
+  -webkit-text-stroke-width: 0.5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-
-
-
-
+.property h3.number{
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(rgb(102, 75, 5), rgb(184, 163, 72), rgb(102, 75, 5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   
+  text-align: center;
+  font-size: 1.7em;
+}
 /* RESPONSIVE */
 
 @media(max-width: 1200px) {
   .showcase{
+    position: absolute;
     justify-content: space-around;
   }
 
-  .logo, .toggle{
-    height: 39px;
-    width: 50px;
-    max-width: 100%;
-    top: -60px;
-    justify-content: space-between;
+  .logo, .email{
+    position: relative;
+    left: -10px;
+    width: 20px;
+    padding: 30px;
+    background-repeat: no-repeat;
   } 
 
+  .email{
+    font-size: 10em;
+  }
+  .overlay1, .showcase video{
+    top: 0px;
+    height: 52%;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .overlay2{
+    top: 52%;
+    max-width: 100%;
+    height: 47%;
+    z-index: 2;
+  }
+
+  footer, footer.property{
+    top: 99%;
+    height: 17%;
+    z-index: 3;
+  }
+  .email{
+    left: 10%;
+    font-size: 0.6em;
+    width: 100%;
+  }
   .text{
-    left: -10px;
-    top: -100px;
+    position: relative;
     width: 800px;
   }
   .text h1, .text h2.welcome{
-    font-size: 2em;
-    -webkit-text-stroke-width: 0.5px;
-    z-index: 10;
-    }
-  .text a{
-    font-size: 1em;
+    position: relative;
+    -webkit-text-stroke-width: 0.6px;
+    font-size: 2.5em;
+    margin: 100px;
+  }
+
+  .leads{
+    font-size: 2.5em;
+    -webkit-text-stroke-width: 1px;
 
   }
+  .buttons{
+    font-size: 0.5em;
+  }
   
-  .text h2.dream, .text h2.copywriter{
-    font-size: 1.5em;
+  
+  .dream, .copywriter{
+    position: relative;
+    font-size: 30px;
+    left: 20%;
+    width: 400px;
+    padding: 30px;
+    font-size: 1.2em;
+  }
+
+  .copywriter{
+    font-size: 1em;
     width: 300px;
   }
 
-  .socials{
-    height: 2px;
-    width: 2px;
-    max-width: 100%;
-    justify-content: center;
-    left: 52%;
-    bottom: 40%;
+
+  hr{
+    width: 350px;
+  }
+
+  @keyframes scroll{
+    0%{ transform: translateX(-200px);}
+    100%{transform: translateX(50px);}
+  }
+  
+  .slide{
+    max-width: 600px;
+    top: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    height: auto;
+  }
+  .socials li {
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .socials li a {
+    display: inline-block;
+    margin: 10px;
+    animation: scroll 6s linear infinite;
+    z-index: 4000;
   }
 }
-
-
-
   /* FOR ITALIAN FLAG */
 /* .flagpng {
   height: 350px;

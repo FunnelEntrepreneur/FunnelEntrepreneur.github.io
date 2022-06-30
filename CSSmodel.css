@@ -334,13 +334,13 @@ footer {
   
   .dream, .copywriter{
     position: relative;
-    font-size: 1.5em;
-    left: 30%;
+    left: 25%;
     width: 300px;
   }
 
   .dream{
     margin-bottom: 190px;
+    font-size: 2em;
   }
 
   .copywriter{

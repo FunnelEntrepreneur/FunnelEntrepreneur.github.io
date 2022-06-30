@@ -201,13 +201,13 @@
   top: 20%;
   width: auto;
 }
-.socials li {
+.slide li {
   list-style: none;
   text-align: center;
   vertical-align: middle;
 }
 
-.socials li a {
+.slide li a {
   display: inline-block;
   margin: 80px;
   animation: scroll 6s linear infinite;
@@ -282,28 +282,28 @@ footer {
     justify-content: space-around;
   }
 
-  .logo, .email{
-    position: relative;
-    left: -10px;
-    width: 20px;
-    padding: 30px;
+  .logo{
+    
     background-repeat: no-repeat;
-  } 
-
-  .email{
-    font-size: 10em;
   }
+  .email{
+    text-align: center;
+    width: 160px;
+    font-size: 1em;
+
+  }
+
   .overlay1, .showcase video{
     top: 0px;
-    height: 52%;
+    height: 53%;
     max-width: 100%;
     z-index: 1;
   }
   .overlay2{
-    top: 52%;
+    top: 53%;
     max-width: 100%;
     height: 47%;
-    z-index: 2;
+    background-image: linear-gradient(rgba(0,0,0,0.8), #859cf186), url(beach.jpg);
   }
 
   footer, footer.property{
@@ -311,20 +311,15 @@ footer {
     height: 17%;
     z-index: 3;
   }
-  .email{
-    left: 10%;
-    font-size: 0.6em;
-    width: 100%;
-  }
+ 
   .text{
     position: relative;
     width: 800px;
   }
   .text h1, .text h2.welcome{
-    position: relative;
     -webkit-text-stroke-width: 0.6px;
     font-size: 2.5em;
-    margin: 100px;
+    margin: 150px;
   }
 
   .leads{
@@ -334,21 +329,23 @@ footer {
   }
   .buttons{
     font-size: 0.5em;
+    margin-bottom: 200px;
   }
-  
   
   .dream, .copywriter{
     position: relative;
-    font-size: 30px;
-    left: 20%;
-    width: 400px;
-    padding: 30px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    left: 30%;
+    width: 300px;
+  }
+
+  .dream{
+    margin-bottom: 190px;
   }
 
   .copywriter{
-    font-size: 1em;
     width: 300px;
+    font-size: 1.3em;
   }
 
 
@@ -357,30 +354,24 @@ footer {
   }
 
   @keyframes scroll{
-    0%{ transform: translateX(-200px);}
-    100%{transform: translateX(50px);}
+    0%{ transform: translateX(-350px);}
+    100%{transform: translateX(300px);}
   }
   
   .slide{
-    max-width: 600px;
-    top: 60%;
-    margin: auto;
     overflow: hidden;
-    position: absolute;
-    height: auto;
-  }
-  .socials li {
-    list-style: none;
-    text-align: center;
-    vertical-align: middle;
+    left: 10%;
+    top: 60%;
   }
   
-  .socials li a {
-    display: inline-block;
-    margin: 10px;
-    animation: scroll 6s linear infinite;
-    z-index: 4000;
+  .slide li{
+    list-style: none;
+    width: 100px;
+    display: flex;
+    float: left;
+    margin: 30px;
   }
+
 }
   /* FOR ITALIAN FLAG */
 /* .flagpng {

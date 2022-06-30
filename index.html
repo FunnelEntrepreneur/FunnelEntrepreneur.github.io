@@ -1,94 +1,121 @@
 <!DOCTYPE html>
 <html lang="eng">
   <head>
+    <script
+      src="https://kit.fontawesome.com/5e7b5a08b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="CSSmodel.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MediaAlchemist Official</title>
-    <link rel="shortcut icon" href="title-logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
   </head>
 
   <body>
     <div class="showcase">
       <header>
         <a href="https://www.media-preneur.com" class="logo"></a>
-        <div class="toggle"></div>
+        <a class="email" href="mailto:funnelcreate@media-preneur.com">
+          <i class="fa-solid fa-envelope"> funnelcreate@media-preneur.com</i>
+        </a>
       </header>
 
       <video src="bg.mp4" muted loop autoplay></video>
 
-      <div class="overlay"></div>
+      <div class="overlay1"></div>
+      <div class="overlay2"></div>
+      <footer>
+        <div class="bottom">
+          <div class="property">
+            <h3 class="tailored">Tailored by <br />MediaAlchemist</h3>
+          </div> <div class="property">
+            <h3 class="number"><i class="fa-solid fa-phone "></i> 07395531349</u></h3>
+          </div>
+        </div>
+      </footer>
 
       <div class="text">
-        <h2 class="welcome">Welcome.. To</h2>
-        <h1>MediaAlchemist!</h1>
-        <h2 class="dream">NEVER STOP DREAMING.</h2>
-        <h2 class="copywriter">With Your Adept Personal CopyWriter</h2>
+        <h2 class="welcome">Welcome to</h2>
+        <h1>MediaAlchemist</h1>
+          <h2 class="leads">
+            Live your Dream <br />
+            Better Income
+          </h2>
+        <hr />
+        <div class="buttons">
+          <span class="about"><a href="Intro.html">ABOUT</a></span>
+          <span class="contact"><a href="Contact page.html">CONTACT</a></span>
+          <span class="services"><a href="Services.html">SERVICES</a></span>
+        </div>
+        <div class="dream" data-aos="fade-in">
+          <h2>NEVER STOP DREAMING</h2>
+        </div>
+        <div class="copywriter" data-aos="fade-in">
+          <h2>With Your Adept Personal CopyWriter</h2>
+        </div>
         <br />
-
-        <div class="explore"><a href="Intro.html">Explore!</a></div>
       </div>
 
-      <ul class="socials">
-        <li>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/MediaPreneur-107532728675088"
-          >
-            <img
-              id="img"
-              src="facebook.png"
-              style="height: 10vh; width: auto"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://www.instagram.com/mediapreneurofficial/"
-          >
-            <img
-              id="img"
-              src="instagram.png"
-              style="height: 10vh; width: auto"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/simone-perfetto-3403b5217/"
-          >
-            <img
-              id="img"
-              src="linkedin.png"
-              style="height: 10vh; width: auto"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://www.youtube.com/channel/UC5LCJhHYhDTxr_vd_BPcceA"
-          >
-            <img id="img" src="youtube.jpg" style="height: 10vh; width: auto" />
-          </a>
-        </li>
-      </ul>
+      <div class="slide">
+        <div class="socials">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/MediaPreneur-107532728675088"
+            >
+              <img
+                id="img"
+                src="facebook.png"
+                style="height: 10vh; width: auto"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/mediapreneurofficial/"
+            >
+              <img
+                id="img"
+                src="instagram.png"
+                style="height: 10vh; width: auto"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/simone-perfetto-3403b5217/"
+            >
+              <img
+                id="img"
+                src="linkedin.png"
+                style="height: 10vh; width: auto"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UC5LCJhHYhDTxr_vd_BPcceA"
+            >
+              <img
+                id="img"
+                src="youtube.png"
+                style="height: 10vh; width: auto"
+              />
+            </a>
+          </li>
+        </div>
+      </div>
     </div>
-    <div class="menu">
-      <ul>
-        <!-- <li><a href="#">HOME</a></li> -->
-        <li><a href="https://www.instagram.com/fitdaddygamer/">GYM</a></li>
-        <br /><br />
-
-        <li><a href="Intro.html">EXPLORE</a></li>
-        <br /><br />
-        <li><a href="Contact page.html">CONTACT</a></li>
-      </ul>
-    </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      AOS.init();
+    </script>
+    <!-- <script>
       const menuToggle = document.querySelector(".toggle");
       const showcase = document.querySelector(".showcase");
 
@@ -96,17 +123,7 @@
         menuToggle.classList.toggle("active");
         showcase.classList.toggle("active");
       });
-    </script>
-    <!-- BODY OF THE WEBSITE -->
-    <!--
-      <img class="pic1" src="pic (9).jpg" alt="pictures failed to upload" />
-      <img class="pic2" src="pic (11).jpg" alt="pictures failed to upload" />
-      <img class="pic3" src="pic (10).jpg" alt="pictures failed to upload" /> 
-        <img class="pic5" src="pic (3).jpg" alt="pictures failed to upload" /> 
-      <img class="pic4" src="pic (12).jpg" alt="pictures failed to upload" />
-      <img class="pic6" src="pic99.jpg" alt="pictures failed to upload" style="margin-right: 450px;" />
-      -->
-    <hr />
+    </script> -->
 
     <!-- <div class="itaflag">
         <img

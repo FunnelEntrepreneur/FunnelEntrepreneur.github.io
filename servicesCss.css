@@ -151,7 +151,7 @@ ul li.ads img{
     ul li{
         position: relative;
         text-align: center;
-        left: -47px;
+/*         left: -47px; */
         font-size: 30px;
         font-weight: 600;
         max-width: 250px;

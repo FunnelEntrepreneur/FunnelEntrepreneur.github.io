@@ -163,8 +163,8 @@ ul li.ads img{
         position: relative;
         vertical-align: middle;
         height: auto;
-        left: -10px;
-        max-width: 240px;
+        left: -30px;
+        max-width: 290px;
         border-width: 3px;
         background-image: linear-gradient(rgb(165, 142, 11), rgba(8, 8, 112, 0.781));
     }

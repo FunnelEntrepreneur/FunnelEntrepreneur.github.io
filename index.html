@@ -250,11 +250,18 @@ https://templatemo.com/tm-575-leadership-event
                                             </div>
         
                                             <div class="col-lg-4 col-md-4 col-12">         
-                                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email" required="">
+                                                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" placeholder="Email" required="">
                                             </div>
-        
+        //email pattern [^ @]*@[^ @]*//
                                             <div class="col-lg-4 col-md-4 col-12">                                    
                                                 <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                            </div>
+                                            
+                                            <div class="col-lg-4 col-md-4 col-12">         
+                                                <img src="captcha_code_file.php?rand=<?php echo rand(); ?>" 
+                                                id="captchaimg" >
+                                                <label for="message">Enter the code above here:</label>
+                                                <input id="6_letters_code" name="6_letters_code" type="text">                                            
                                             </div>
         
                                             <div class="col-12">

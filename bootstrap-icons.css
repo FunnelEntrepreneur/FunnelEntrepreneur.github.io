@@ -82,11 +82,71 @@
         font-size: 1rem!important;
     }
 
-    #NameEmailSubject{
+    #NameEmail, #Subject{
         width: 33.3%!important;
         float: left!important;
     }
 
+    #mypicture{
+        width: 80%!important;
+        height: auto!important;
+    }
+ }
+
+ @media (max-width:291px){
+    
+    h4{  
+        /* NavBar Title */
+        font-size: 1.1rem!important;
+    }
+    #start{
+        width: 90%!important;
+    }
+    h1{
+        /* TITLE */
+        font-size: 20px!important;
+        margin-top: 70px!important;
+    }
+
+    .fs-5{
+        /* WHITE PARAGRAPH */
+        font-size: 0.8rem !important;
+    }
+
+    .fs-4{
+        /* CHOOSE ONE FREE... */
+        font-size: 0.7rem !important;
+    }
+
+
+    .fs-6{
+        /* BLOGS, SEO... */
+        font-size: 0.7rem !important;
+    }
+
+    h4, h3,h2{
+        font-size: 1.5rem!important;
+    }
+
+    #lastH3{
+        font-size: 1.5rem!important;
+    }
+
+    p{
+        font-size: 1rem!important;
+    }
+
+    #HighlightRows{
+        margin-bottom: -30px;
+    }
+
+    #NameEmail{
+        width: 50%!important;
+        float: left!important;
+    }
+    #Subject{
+        width: 100%!important;
+    }
     #mypicture{
         width: 80%!important;
         height: auto!important;

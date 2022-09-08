@@ -140,6 +140,10 @@
         margin-bottom: -30px;
     }
 
+    #formSpace{
+        width: 100%!important;
+        padding: 0!important;
+    }
     #NameEmail{
         width: 50%!important;
         float: left!important;

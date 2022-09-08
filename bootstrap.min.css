@@ -187,7 +187,7 @@ h3.highlight-title{
     }
     h1{
         /* TITLE */
-        font-size: 30px!important;
+        font-size: 26px!important;
         margin-top: 20px!important;
     }
 
@@ -198,7 +198,7 @@ h3.highlight-title{
 
     .fs-4{
         /* CHOOSE ANY... */
-        font-size: 0.9rem !important;
+        font-size: 0.85rem !important;
     }
 
     h4, h3,h2{

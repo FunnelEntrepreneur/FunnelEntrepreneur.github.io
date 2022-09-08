@@ -57,6 +57,13 @@ h3.highlight-title{
     text-shadow: 0 0 10px var(--bs-blue), 0 0 30px var(--bs-blue), 0 0 50px white;
 }
 
+@media (min-width:963px){
+    #start#title1{
+        /* TITLE */
+        width: 100%!important;
+    }
+}
+
  @media (min-width:703px) and (max-width:963px){
     
     h4{  
@@ -176,7 +183,7 @@ h3.highlight-title{
         font-size: 1rem!important;
     }
     #start{
-        width: 100%!important;
+        width: 95%!important;
     }
     h1{
         /* TITLE */

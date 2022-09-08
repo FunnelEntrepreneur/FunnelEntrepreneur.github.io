@@ -940,7 +940,8 @@ strong {
 
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 48px;
+    font-size: 100px; 
+/*     48 */
   }
 
   h2 {

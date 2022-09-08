@@ -187,18 +187,18 @@ h3.highlight-title{
     }
     h1{
         /* TITLE */
-        font-size: 20px!important;
+        font-size: 40px!important;
         margin-top: 20px!important;
     }
 
     .fs-5{
         /* WHITE PARAGRAPH */
-        font-size: 0.8rem !important;
+        font-size: 1rem !important;
     }
 
     .fs-4{
-        /* CHOOSE ONE FREE... */
-        font-size: 0.7rem !important;
+        /* CHOOSE ANY... */
+        font-size: 1rem !important;
     }
 
 

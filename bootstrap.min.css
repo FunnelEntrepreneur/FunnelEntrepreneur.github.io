@@ -70,6 +70,7 @@ h3.highlight-title{
     h1{
         /* TITLE */
         font-size: 29px!important;
+        color: white!important;
     }
 
     .fs-4{
@@ -231,4 +232,5 @@ h3.highlight-title{
         height: auto!important;
     }
  }
-/*# sourceMappingURL=bootstrap.min.css.map */
+/*# sourceMappingURL=bootstrap.min.css.map 
+CONFIRM CHANGE*/

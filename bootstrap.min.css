@@ -82,6 +82,10 @@ h1{
     font-weight: 900 !important;
     margin-top: -50px!important;
 }
+h3.highlight-title
+{
+  text-align: center !important;
+}
 
 h1,.fs-5, h3.highlight-title, #navbarTitle, #lastH3{
     /* HIGHLIGHT TITLES */

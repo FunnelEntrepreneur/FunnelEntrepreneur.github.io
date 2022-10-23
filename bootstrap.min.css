@@ -58,15 +58,15 @@ video{
     opacity: 1!important;
 }
 #overlay{
-    position: absolute;
+    position: absolute !important;
     background: yellowgreen;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    opacity: 0.5 !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
     /* animation: LightChange 3s ease-in-out infinite; */
-    mix-blend-mode: overlay;
+    mix-blend-mode: overlay  !important;
 } 
 
 /* @keyframes LightChange{

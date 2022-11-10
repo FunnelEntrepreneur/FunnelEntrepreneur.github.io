@@ -50,8 +50,19 @@
 
 *{
     font-family: 'Poppins', sans-serif!important;
-    font-style: italic!important;
     text-align: left!important;
+}
+
+#start, #start h1, #start p{
+    width: 100%!important;
+    font-style: italic!important;
+    text-align: center!important;
+}
+
+.You p, .About p{
+    color: black;
+    font-style: italic!important;
+    font-size: 22px!important;
 }
 
 video{
@@ -76,24 +87,41 @@ video{
     100%{background: blue;}
 } */
 
-h1{
+.about{
+    background-color: #EAECEE !important;
+}
+h1, h3{
     /* TITLE */
-    font-size: 30px !important;
+    font-style: italic!important;
+    font-size: 45px !important;
     font-weight: 900 !important;
-    margin-top: -50px!important;
+}
+
+h3{
+    color: whitesmoke !important
 }
 h3.highlight-title
 {
   text-align: center !important;
 }
 
-h1,.fs-5, h3.highlight-title, #navbarTitle, #lastH3{
+h1, h3,.fs-5, h3.highlight-title, #navbarTitle, #lastH3{
     /* HIGHLIGHT TITLES */
-    text-shadow: 0 0 10px var(--bs-blue), 0 0 30px var(--bs-blue)
+    text-shadow: 0 3px 10px var(--bs-blue), 0 0 30px var(--bs-blue)
 }
 .fs-4, li.nav-item{
     /* HIGHLIGHT TITLES */
-    text-shadow: 0 5px 10px var(--bs-white)
+    text-shadow: 0 3px 10px var(--bs-white)
+}
+
+form *{
+    width: 100%!important;
+    text-align: center!important;
+}
+
+.speakers{
+    width: 100%!important;
+    margin-left: 60%;
 }
 
 @media (min-width:963px){
@@ -149,8 +177,9 @@ h1,.fs-5, h3.highlight-title, #navbarTitle, #lastH3{
     }
 
     #mypicture{
-        width: 80%!important;
+        width: 50%!important;
         height: auto!important;
+        margin-left: 20%!important;
     }
  }
 

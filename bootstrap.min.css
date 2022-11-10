@@ -100,12 +100,14 @@ h1, h3{
 h3{
     color: whitesmoke !important
 }
-h3.highlight-title
+h4.highlight-title
 {
   text-align: center !important;
+  font-weight: 900 !important;
+  font-style: italic!important;
 }
 
-h1, h3,.fs-5, h3.highlight-title, #navbarTitle, #lastH3{
+h1, h3, h4, .fs-5, h3.highlight-title, #navbarTitle, #lastH3{
     /* HIGHLIGHT TITLES */
     text-shadow: 0 3px 10px var(--bs-blue), 0 0 30px var(--bs-blue)
 }

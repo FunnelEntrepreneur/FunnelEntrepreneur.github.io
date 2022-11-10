@@ -62,7 +62,7 @@
 .You p, .About p{
     color: black;
     font-style: italic!important;
-    font-size: 22px!important;
+    font-size: 20px!important;
 }
 
 video{
@@ -114,21 +114,21 @@ h1, h3,.fs-5, h3.highlight-title, #navbarTitle, #lastH3{
     text-shadow: 0 3px 10px var(--bs-white)
 }
 
-form *{
-    width: 100%!important;
+.form *{
     text-align: center!important;
+}
+form{
+    width: 70%!important;
+    left: 15%;
+    align-items: center!important;
+}
+form #NameEmail{
+    width: 100%!important;
 }
 
 .speakers{
     width: 100%!important;
     margin-left: 60%;
-}
-
-@media (min-width:963px){
-    h1{
-        /* TITLE */
-        width: 100%!important;
-    }
 }
 
  @media (min-width:703px) and (max-width:963px){
@@ -138,42 +138,38 @@ form *{
         font-size: 2rem!important;
     }
     #start{
-        width: 80%!important;
+        width: 90%!important;
     }
 
     h1{
         /* TITLE */
+        margin-top: 20%!important;
         font-size: 4.5vw!important;
-        margin-top: 3%!important;
-        margin-bottom: 5%!important;
     }
 
     .fs-4{
         /* CHOOSE ANY SERVICE... */
-        font-size: 1.2rem !important;
-        
+        font-size: 1.5rem !important;
     }
 
     .fs-5{
         /* WHITE PARAGRAPH */
-        font-size: 0.9rem !important;
+        font-size: 1.2rem !important;
     }
 
     h3,h2{
         font-size: 2.2rem!important;
     }
 
+    #message{
+        height: 110px;
+    }
     #lastH3{
-        font-size: 1.5rem!important;
+        font-size: 1.8rem!important;
     }
 
     p{
         font-size: 1rem!important;
-    }
-
-    #NameEmail, #Subject{
-        width: 33.3%!important;
-        float: left!important;
     }
 
     #mypicture{
@@ -189,36 +185,42 @@ form *{
         /* NavBar Title */
         font-size: 28px!important;
     }
+
+    section.hero{
+        margin-bottom: -20%!important;
+    }
     #start{
-        width: 89%!important;
+        width: 95%!important;
     }
     h1{
         /* TITLE */
-        font-size: 5vw!important;
-        margin-top: 10%!important;
-        margin-bottom: 5%!important;
+        font-size: 1.5rem!important;
     }
 
     .fs-5{
         /* WHITE PARAGRAPH */
-        font-size: 0.8rem !important;
+        font-size: 0.9rem !important;
     }
 
     .fs-4{
         /* CHOOSE ONE FREE... */
-        font-size: 1rem !important;
+        font-size: 1.2rem !important;
     }
 
     h4, h3,h2{
-        font-size: 1.5rem!important;
+        font-size: 1.8rem!important;
     }
 
     h3.highlight-title{
-        font-size: 2.5rem!important;
+        font-size: 2rem!important;
+    }
+
+    #message{
+        height: 90px;
     }
 
     #lastH3{
-        font-size: 1.7rem!important;
+        font-size: 1.4rem!important;
     }
 
     p{
@@ -252,9 +254,10 @@ form *{
         /* NavBar Title */
         font-size: 1.2rem!important;
     }
-    #start{
-        width: 80%!important;
+    #start, #start h1, #start p{
+        width: 95%!important;
     }
+
     h1{
         /* TITLE */
         font-size: 19px!important;
@@ -264,12 +267,12 @@ form *{
 
     .fs-5{
         /* WHITE PARAGRAPH */
-        font-size: 0.65rem !important;
+        font-size: 0.8rem !important;
     }
 
     .fs-4{
         /* QUOTE & CHOOSE ANY... */
-        font-size: 0.9rem !important;
+        font-size: 1.2rem !important;
     }
 
     h4, h3,h2{
@@ -277,20 +280,30 @@ form *{
     }
 
     #lastH3{
-        font-size: 1.5rem!important;
+        font-size: 1.2rem!important;
     }
 
-    p{
-        font-size: 1rem!important;
+    .About p, .You p{
+        font-size: 0.8rem!important;
     }
 
     #HighlightRows{
-        margin-bottom: -30px;
+        margin-bottom: -8%!important;
+    }
+    .highlight-thumb{
+        width: 90%!important;
+        left: 5%;
     }
 
-    #formSpace{
-        width: 100%!important;
-        padding: 0!important;
+    #name, #email{
+        height: 30px!important;
+    }
+    #message{
+        height: 60px!important;
+    }
+    
+    form{
+        margin-bottom: -20px;
     }
     #NameEmail{
         width: 50%!important;

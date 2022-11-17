@@ -53,6 +53,12 @@
     text-align: left!important;
 }
 
+
+.form img{
+    left: 0;
+    position: absolute;
+}
+
 #start, #start h1, #start p{
     width: 100%!important;
     font-style: italic!important;
@@ -61,8 +67,8 @@
 
 .You p, .About p{
     color: black;
-    font-style: italic!important;
     font-size: 20px!important;
+    font-weight: 600 !important;
 }
 
 video{
@@ -118,14 +124,19 @@ h1, h3, h4, .fs-5, h3.highlight-title, #navbarTitle, #lastH3{
 
 .form *{
     text-align: center!important;
+    align-items: center!important;
+    justify-content: center!important;
+    font-size: 15px;
 }
 form{
-    width: 70%!important;
-    left: 15%;
-    align-items: center!important;
-}
-form #NameEmail{
     width: 100%!important;
+    left: 15%;
+}
+form #NameEmail, form #text{
+    width: 40%!important;
+}
+h2.business{
+    font-size: 30px;
 }
 
 .speakers{

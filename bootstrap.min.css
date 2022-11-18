@@ -332,7 +332,7 @@ h2.business{
     }
 
     #lastH3{
-        font-size: 1.2rem!important;
+        font-size: 20px!important;
     }
 
     .About p, .You p{
@@ -356,7 +356,7 @@ h2.business{
     }
 
     h2.business{
-        font-size: 15px!important;
+        font-size: 20px!important;
     }
     #NameEmail{
         width: 80%!important;

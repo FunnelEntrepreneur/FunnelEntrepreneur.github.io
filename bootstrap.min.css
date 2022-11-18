@@ -340,11 +340,12 @@ h2.business{
     }
    
     .box{
-        display: inline-block;
+        display: block!important;
     }
    
     .form *{
         font-size: 8px;
+        left: 10%;
     }
     .form{
        margin-top: 15%;
@@ -355,7 +356,7 @@ h2.business{
     }
 
     h2.business{
-        font-size: 13px!important;
+        font-size: 15px!important;
     }
     #NameEmail{
         width: 80%!important;

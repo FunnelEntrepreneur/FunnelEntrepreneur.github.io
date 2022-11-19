@@ -3,6 +3,9 @@
     <head>
         <link rel="shortcut icon" href="logotitle.png" type="image/x-icon" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,6 +23,10 @@
         
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,900&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;700&display=swap" rel="stylesheet">
+
         <link href="bootstrap.min.css" rel="stylesheet">
 
 <!--         <link href="bootstrap-icons.css" rel="stylesheet">
@@ -35,28 +42,38 @@
     </head>
     
     <body>
-
         <nav class="navbar navbar-expand-lg">
+            <div id="page_wrapper">
+
             <div class="container">
                 <div class="NavItems">
+                    
                     <ul class="navbar-nav ms-auto">
 
-                        <li id="ThisIsWhy" class="nav-item">
+                        <li class="nav-item">
                             <a href="index.html">
                                 <img class="logo" src="logocustom.png">
                             </a>
                         </li>
 
-                        <li id="NavTitle" class="nav-item">
-                            <h4 id="navbarTitle" class="text-white" style="font-style: italic; font-weight: 900;"> Gyms, Coaches, PTs, Therapists, and more. </h4>
-                        </li>
-
-                        <li id="ThisIsWhy" class="nav-item">
-                            <a class="nav-link click-scroll" href="#Services">Read Up!</a>
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#Main">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link custom-btn btn d-none d-lg-block" href="#form">Scale Today</a>
+                            <a class="nav-link click-scroll" href="#highlight_1">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#WhatIDo">What I Do</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#Bio">About Me</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn btn d-none d-lg-block" href="#form" style="margin: 0!important;">Inquire</a>
                         </li>
                     </ul>
                 <div>
@@ -69,28 +86,22 @@
             <section class="hero" id="Main">
                 <div class="container">
                     <div class="row">
+
                         <div id="start" class="hero-text">
                             <h1 id="title1" class="text-white "><br><br>Next Level Fitness Leads Marketing</h1>
                             <hr style="background-color:white;">
-                            <span id="Quote" class="text-info fs-4" style="font-weight: 600;">Streamline Customer Acquisition For Your Business</span>
+                            <span id="Quote" class="text-info fs-4">Streamline Your Customer Acquisition For Your Business</span>
                             <hr style="background-color:white;">
-                            <p class="text-white fs-5"> Are you tired of fighting famine with very low stream of clients in your program, gym or buyers in your store? 
-                                <br><br> Whether you already tried everything or don't know where to start: <br> You can now stop dealing with expensive subcription softwares and ineffective campaigns.
+                            <p class="text-white fs-5"> Is your Chiropractic and Sports Therapy Centre or Gym fighting famine to a low stream of clients? <br>
+                                Have you been cramming infromation and running ineffective campaigns for too long?
+                                <br><br> My untapped marketing model has made £86,000 to businesses in 2 months,<br> I will set your practice 15 appointments a week (or you dont pay!).<br>
+                                <a href="https://calendly.com/media-preneur/call-with-simone" class="fs-4" id="Quote"> Schedule a call on my Calendly</a>                                                                
                             </p> 
-                            <a href="mailto: funnelcreate@media-preneur.com" class="text-info fs-4" style="font-weight: 600;"> Schedule a call on our Calendly!</a>                                                                
-                        </div>              
+                        </div>   
+
                     </div>  
                 </div>       
-
-                <div class="video-wrap">
-                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                        
-                             <source src="bg-blue.mp4" type="video/mp4">
-
-                        Your browser does not support the video tag.
-                    </video>
-                    <div id="overlay"></div>
-                </div>
+                <video src="bg-blue.mp4" autoplay="" loop="" muted="" class="custom-video" poster="">
             </section>
 
 
@@ -103,7 +114,7 @@
                                 <img src="email.jpg" class="highlight-image img-fluid" alt="">
 
                                 <div class="highlight-info">
-                                    <h4 class="highlight-title">Email Campaigns</h4>
+                                    <h4 class="highlight-title">Email & Text <br>Campaigns</h4>
                                     </a>
 
                                 </div>
@@ -137,7 +148,7 @@
 
                         <div id="HighlightRows" class="col-lg-4 col-md-6 col-12">
                             <div class="highlight-thumb">
-                                <img src="salespage.jpg" class="highlight-image img-fluid" alt="">
+                                <img src="SalesPage.png" class="highlight-image img-fluid" alt="">
 
                                 <div class="highlight-info">
                                     <h4 class="highlight-title">Sales Page Rewriting</h4>
@@ -198,66 +209,74 @@
                                 <img src="GraphicDesign.png" class="highlight-image img-fluid" alt="">
 
                                 <div class="highlight-info">
-                                    <h4 class="highlight-title">Graphic Design <br> Coming Soon!</h4>
+                                    <h4 class="highlight-title">Graphic Design</h4>
                                     </a>
 
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </section>
 
-            <section class="about section-padding" id="Services">
-                <img src="lift.png" style="width: 100%; margin-top: -5%; margin-bottom: 5%;">
+            <section class="about section-padding" id="WhatIDo">
+                <img src="lift.png" style="width: 100%; margin-top: -5%; margin-bottom: 7%;">
 
                 <div class="container">
                     <div class="row">
                         <h3 class="mb-4">You Sit Back, I Deliver</h3>
 
-                        <div class="You col-lg-4 col-md-6 col-12 mb-3" style="width: 70%;">
+                        <div class="You col-lg-4 col-md-6 col-12 mb-3">
                             <p>
-                            We get it... you want to help as many people as possible and at the same time make a lot of profit.
-                            <i><span style="color:blue;"><br>
-                            Let us take care of it</span>.</i> <br><br>
-                            My team is highly trained to: <br>
-                            1. Revamp Your Website <br>
-                            2. Generate thousands of leads <br>
-                            3. Drive them on your Website <br>
-                            4. Securing Checkouts to increase your monthly Turnover. <br><br>
-                            You'll do <span style="color:blue;">ZERO</span> of the work. <br>
+                            I get it... you want to change the lives of as many people as possible, while also making a lucrative income.
+                            <i><span style="color:var(--bs-blue); font-size: larger;"><br><br>
+                            I will take you there with these steps:</span></i> <br><br>
+                            Revamping Your Website <br>
+                            Generating leads with Advertising <br>
+                            Secure Appointments <br>
+                            Minimize cancellations and no-shows<br>
+                            Maximise monthly turnover<br><br>
+                            This approach proved to yield an enormous 17X ROI
+                            <br>with our innovative methods disclosed to you only!
+                            <br><br> You'll also do <span style="color:var(--bs-blue);">ZERO</span> of the work. <br>
                             </p>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12"  style="width: 30%;">
+                        <div class="col-lg-4 col-md-6 col-12"  style="width: 30%; margin-bottom: 10%;">
+                            <img id="chiro" src="photos-chiro.png" style="width: 100%; height:auto;">
                             <img src="team.png" style="width: 100%; height:auto;">
+
                         </div>
                     
-                        <br><br>
-
                         <div class="col-lg-4 col-md-6 col-12"  style="width: 30%;">
-                            <img src="burnout.png" style="width: 100%; height:auto; border-radius: 25px;">
+                            <img src="burnout.png" style="width: 100%; height:auto;">
                         </div>
-                        <div class="You col-lg-4 col-md-6 col-12 mb-3" style="width: 70%;">
+                        <div class="You col-lg-4 col-md-6 col-12 mb-3">
                             <p>
                                 I understand how tired you are of clowning around with a business model that is not helping you scale...<br><br>
-                                You're Sick and Tired of being Sick and Tired, but you've understood the value of investing in Guaranteed Results.<br><br>
-                                So I'm going to give you a <span style="color:blue;">Lifetime Opportunity</span>.<br><br>
-                                To convert your new traffic into buying customers... if your business can handle a big audience!
+                                You're Sick and Tired of seeing your investments go down a pit of no return, here's how that's going to change.<br><br>
+                                I'm going to give you a <span style="color:var(--bs-blue);">Lifetime Opportunity</span><br><br>
+                                To convert your new traffic into buying customers...  if your business can handle a big audience!
                             </p>
                         </div>
-
+                    </div>
+                </div>
+            </section>
+                        
+            <section class="about section-padding" id="WhatIDo" style="background-color: black; margin-top: -350px;">
+                <img id="chiro" src="chiro.png">
+                <div class="container">
+                    <div class="row">
                         <div class="box">
-                            <div class="You col-lg-4 col-md-6 col-12 mb-3" style="width: 60%;" >
+                            <div class="You col-lg-4 col-md-6 col-12 mb-3" >
                                 <p>
                                     Don't fret if you're new here and still learning the ropes.<br><br>
-                                    <span style="color:blue;">Fill out</span> the quick Form below to get in touch with me in less than 24 hours.<br><br>
-                                    Alternatively, <span style="color:blue;">Book A Call With Me</span> this very minute with Calendly at the bottom right of your screen.
+                                    <span style="color:var(--bs-blue);">Fill out</span> the quick Form below to get in touch with me in less than 24 hours.<br><br>
+                                    Alternatively, <span style="color:var(--bs-blue);">Book A Call With Me</span> this very minute with Calendly at the bottom right of your screen.
                                 </p>
                             </div>
-                            <div class="form col-lg-4 col-md-6 col-12">
-                                <form class="custom-form contact-form bg-white shadow-lg" action="https://formsubmit.co/funnelcreate@media-preneur.com" method="post" role="form">
-                                    <h2 class="business" style="font-weight: 900; font-style: italic;">I Get In Touch In Under 24 Hours!</h2>
+                            <div class="form col-lg-4 col-md-6 col-12"> 
+                                <form class="custom-form contact-form bg-white shadow-lg" id="form" action="https://formsubmit.co/funnelcreate@media-preneur.com" method="post" role="form">
+                                    <h2 class="business">I Get In Touch In Under 24 Hours!</h2>
                                     <div id="formrows" class="row">
                             
                                         <div id="NameEmail" class="col-lg-4 col-md-4 col-12">
@@ -277,14 +296,12 @@
                                 </form>
                             </div>
                         </div>     
-                        
-                            <h3 id="lastH3" class="text-white text-center" style="margin-bottom: -100px;">Break Your Revenue Record Now</h3>
-                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="Bio section-padding">
+            <section class="Bio section-padding" id="Bio" style="background-color: #273053;">
+                <img id="me1" src="me3.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="About col-lg-6 col-12 mr-3" >
@@ -312,20 +329,18 @@
                     </div>
                 </div>
             </section>
+        <footer class="navbar navbar-expand-lg">
             
-            <div class="col-lg-7 col-12">
-                <ul class="footer-menu d-flex flex-wrap">
-                    <li class="footer-menu-item"><a href="#Main" class="footer-menu-link">Back to top</a></li>
-                </ul>
-            </div>
-                
-            <div class="col-lg-5 col-12 ms-lg-auto">
-                <div class="copyright-text-wrap d-flex align-items-center">
-                    <p class="copyright-text ms-lg-auto me-4 mb-0">Copyright © 2022. 
-                    
-                    <br>All Rights Reserved. 
-    
-<!--                             <a href="#Main" class="bi-arrow-up arrow-icon custom-link"></a> -->
+            <div id="page_wrapper">
+
+                <div class="NavItems"></div>>
+                    <ul class="footer-menu d-flex flex-wrap">
+                        <li>
+                            <div class="copyright-text-wrap d-flex align-items-center">
+                                <p class="copyright-text text-white ms-lg-auto me-4 mb-0">Copyright © 2022 <br>All Rights Reserved
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>

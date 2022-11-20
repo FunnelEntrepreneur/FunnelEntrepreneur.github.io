@@ -94,11 +94,17 @@
     height: 600px;
 }
 
-#Main, #Main h1, #Main p, .highlight-title{
+#Main, #Main h1, #Main p{
     font-family: 'Poppins' !important;
     text-align: center!important;
     font-weight: 300;
 }
+.highlight-title{
+    font-weight: 900;
+    font-family: 'Poppins' !important;
+    text-align: center!important;
+}
+
 #Main p{
     font-size: 25px!important;
     margin-top: 5%;
@@ -222,23 +228,18 @@ h2.business{
     font-family: 'Signika', sans-serif;
 }
 
-#photo{
-    position: absolute;
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    background-size: contain;
+/* #Testimonials{
+    border-style: double;
 }
+#avatar{
+    width: 50%;
+    border-radius: 200px;
+    margin-top: 10%;
+} */
+
 .speakers{
     width: 100%!important;
     margin-left: 60%;
-}
-#me1{
-    position: absolute;
-    margin-top: -9%;
-    width: 100%;
-    height: 150%;
-    opacity: 0.2;
-    object-fit: cover;
 }
 
 #mypicture{

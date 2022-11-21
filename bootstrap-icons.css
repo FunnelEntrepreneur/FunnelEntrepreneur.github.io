@@ -51,6 +51,31 @@
     justify-content: center!important;
 }
 
+.separator:after{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    content: '';
+    transform: rotate(45deg);
+    margin-top: -25px;
+    background-color: #273053;
+    z-index: 1000;
+}
+.separator1:after{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    content: '';
+    transform: rotate(45deg);
+    margin-top: -25px;
+    background-color: #EAECEE;
+    z-index: 1000;
+}
+
 #page_wrapper {
     width: 100%;
     max-width: 1024px;
@@ -59,21 +84,31 @@
 
 .nav-item a{
     font-size: 20px!important;
-    font-family: 'Poppins';
+    font-family: 'Poppins' !important;
 }
 .logo{
     height: 70px; width: auto;
 }
 
 #Main{
-    height: 600px;
+    height: 1000px;
 }
 
-#Main, #Main h1, #Main p, .highlight-title{
-    font-family: 'Poppins';
+iframe{
+    width: 700px;
+    height: 450px;
+}
+#Main, #Main h1, #Main p{
+    font-family: 'Poppins' !important;
     text-align: center!important;
     font-weight: 300;
 }
+.highlight-title{
+    font-weight: 900;
+    font-family: 'Poppins' !important;
+    text-align: center!important;
+}
+
 #Main p{
     font-size: 25px!important;
     margin-top: 5%;
@@ -197,23 +232,18 @@ h2.business{
     font-family: 'Signika', sans-serif;
 }
 
-#photo{
-    position: absolute;
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    background-size: contain;
+/* #Testimonials{
+    border-style: double;
 }
+#avatar{
+    width: 50%;
+    border-radius: 200px;
+    margin-top: 10%;
+} */
+
 .speakers{
     width: 100%!important;
     margin-left: 60%;
-}
-#me1{
-    position: absolute;
-    margin-top: -9%;
-    width: 100%;
-    height: 150%;
-    opacity: 0.2;
-    object-fit: cover;
 }
 
 #mypicture{
@@ -226,7 +256,6 @@ footer{
 }
 
  @media (min-width:703px) and (max-width:963px){
-
 
     .logo{
         height: 60px; width: auto;
@@ -243,7 +272,7 @@ footer{
     }
 
     #Main{
-        height: 650px;
+        height: 1230px;
         margin-top: -50px;
     }
     #Main p{
@@ -259,6 +288,11 @@ footer{
         font-size: 50px!important;
     }
 
+    iframe{
+        width: 600px;
+        height: 390px;
+    }
+
     h3{
         font-size: 2rem!important;
     }
@@ -269,7 +303,18 @@ footer{
     .You p, .About p{
         font-size: 15px!important;
     }
-    
+
+    #team{
+        margin-left: 10%!important;
+        width: 140%!important;
+    }
+    #burnout{
+        width: 140%!important;
+    }
+    #YouBurnout{
+        margin-right: -15%;
+        margin-left: 15%;
+    }
     #chiro{
         margin-top: 25%;
     }
@@ -292,6 +337,10 @@ footer{
         font-size: 1rem!important;
     }
 
+    #Bio{
+        height: 900px;
+    }
+
     #mypicture{
         width: 50%!important;
         height: auto!important;
@@ -299,14 +348,14 @@ footer{
     }
  }
 
- @media (min-width: 400px) and (max-width: 703px){
+ @media (min-width: 400px) and (max-width: 702px){
     
     .logo{
         height: 45px; width: auto;
     }
     
     .nav-item a{
-        font-size: 15px!important;
+        font-size: 12px!important;
     }
     ul{
         display: table!important;
@@ -316,9 +365,13 @@ footer{
     li{
         display: table-cell;
     }
+
+    #Main{
+        height: 800px!important;
+    }
    
     #Main p{
-        font-size: 15px!important;
+        font-size: 13px!important;
         margin-top: 10%;
     }
 
@@ -330,13 +383,17 @@ footer{
         /* TITLE */
         font-size: 2rem!important;
     }
+    iframe{
+        width: 350px;
+        height: 220px;
+    }
 
     #highlight_1{
         margin-top: -30%;
     }
     #highlight-size{
         width: 80%;
-        left: 10%;
+        left: 5%;
     }
 
     #chiro{
@@ -344,13 +401,15 @@ footer{
     }
     #team{
         width: 130px;
+        margin-left: -30%;
     }
     .box{
         display: block;
         margin-left: 25%;
     }
     .You p, .About p{
-        font-size: 15px!important;
+        font-size: 12px!important;
+        width: 97%;
     }
     
     .form *{
@@ -360,7 +419,7 @@ footer{
         width: 75%!important;
         margin-top: 5%!important;
         margin-bottom: -5%!important;
-
+        left: -5%!important;
     }
    
     h2.business{
@@ -388,6 +447,10 @@ footer{
         font-size: 30px!important;
     }
 
+    #Bio{
+        height: 800px!important;
+    }
+
     #mypicture{
         width: 55%!important;
         height: auto!important;
@@ -400,52 +463,60 @@ footer{
 
  @media (min-width: 320px) and (max-width: 400px){
     
-   
     .logo{
-        height: 30px; width: auto;
+        height: 25px; 
+        width: auto;
     }
     .nav-item a{
-        font-size: 13px!important;
+        font-size: 10px!important;
         font-family: 'Poppins';
     }
     
     ul{
         display: table!important;
-        justify-content: space-between;
     }
 
     li{
         display: table-cell;
     }
 
-    #Main, #Main h1, #Main p{
+    #Main{
+        height: 650px;
+    }
+
+    #Main h1, #Main p{
         width: 95%!important;
     }
 
     #Main p{
-        font-size: 17=0px!important;
+        font-size: 12px!important;
     }
     #Quote{
-        font-size: 13px!important;
+        font-size: 15px!important;
     }
 
     h1{
         /* TITLE */
-        font-size: 19px!important;
+        font-size: 23px!important;
         margin-top: 30px!important;
         margin-bottom: 30px!important;
     }
 
+    iframe{
+        width: 250px;
+        height: 150px;
+    }
+
     h3,h2{
-        font-size: 1.5rem!important;
+        font-size: 1.4rem!important;
     }
 
     .About p, .You p{
-        font-size: 10px!important;
+        font-size: 8px!important;
     }
    
     #chiro{
-        margin-top: 45%;
+        margin-top: 55%;
     }
     .box{
         display: block!important;
@@ -457,6 +528,7 @@ footer{
     }
     .form{
        margin-top: 15%;
+       margin-bottom: -15%;
     }
     form{
         width: 80%!important;
@@ -464,11 +536,10 @@ footer{
     }
 
     h2.business{
-        font-size: 25px!important;
+        font-size: 24px!important;
+        padding: 20px!important;
     }
-    #NameEmail{
-        width: 80%!important;
-    }
+   
 
     #HighlightRows{
         margin-bottom: -8%!important;
@@ -478,25 +549,24 @@ footer{
         left: 5%;
     }
 
-    #name, #email{
-        height: 30px!important;
+    #name, #email, #number{
+        height: 10px!important;
+        width: 90%!important;
+
+    }
+
+    #Bio{
+        height: 750px;
     }
     
-    
-    form{
-        margin-bottom: -20px;
-    }
-    #NameEmail{
-        width: 50%!important;
-        float: left!important;
-    }
-    #Subject{
-        width: 100%!important;
-    }
     #mypicture{
         width: 80%!important;
         height: auto!important;
         margin-left: 0;
+    }
+
+    footer p{
+        font-size: 15px;
     }
  }
 /*# sourceMappingURL=bootstrap.min.css.map 

@@ -241,6 +241,9 @@ h2.business{
     margin-top: 10%;
 } */
 
+#Bio{
+    height: 1100px;
+}
 .speakers{
     width: 100%!important;
     margin-left: 60%;
@@ -251,6 +254,9 @@ h2.business{
     border-radius: 25px;
 }
 
+#footer{
+    font-size: 20px!important;
+}
 footer{
     text-align: center;
 }
@@ -262,6 +268,7 @@ footer{
     }
     .nav-item a{
         font-size: 18px!important;
+        font-family: 'Poppins' !important;
     }
     ul{
         display: table!important;
@@ -278,6 +285,7 @@ footer{
     #Main p{
         font-size: 20px!important;
         margin-top: 5%;
+        font-family: 'Poppins' !important;
     }
     #Quote{
         font-size: 22px!important;
@@ -286,6 +294,7 @@ footer{
         /* TITLE */
         margin-top: 20%!important;
         font-size: 50px!important;
+        font-family: 'Poppins' !important;
     }
 
     iframe{
@@ -338,7 +347,7 @@ footer{
     }
 
     #Bio{
-        height: 900px;
+        height: 1000px;
     }
 
     #mypicture{
@@ -346,16 +355,23 @@ footer{
         height: auto!important;
         margin-left: 20%!important;
     }
+    #footer{
+        font-size: 15px!important;
+    }
  }
 
  @media (min-width: 400px) and (max-width: 702px){
     
+    nav{
+        left: -10%!important;
+    }
     .logo{
         height: 45px; width: auto;
     }
     
     .nav-item a{
         font-size: 12px!important;
+        font-family: 'Poppins' !important;
     }
     ul{
         display: table!important;
@@ -371,17 +387,19 @@ footer{
     }
    
     #Main p{
-        font-size: 13px!important;
+        font-size: 17px!important;
         margin-top: 10%;
+        font-family: 'Poppins' !important;
     }
 
     #Quote{
-        font-size: 18px!important;
+        font-size: 20px!important;
     }
 
     h1{
         /* TITLE */
         font-size: 2rem!important;
+        font-family: 'Poppins' !important;
     }
     iframe{
         width: 350px;
@@ -448,7 +466,7 @@ footer{
     }
 
     #Bio{
-        height: 800px!important;
+        height: 950px!important;
     }
 
     #mypicture{
@@ -456,13 +474,18 @@ footer{
         height: auto!important;
         margin-left: 0;
     }
+   
     #speakers-info{
         width: 70%;
+    }
+    #footer{
+        font-size: 15px!important;
     }
  }
 
  @media (min-width: 320px) and (max-width: 400px){
     
+   
     .logo{
         height: 25px; 
         width: auto;
@@ -470,6 +493,7 @@ footer{
     .nav-item a{
         font-size: 10px!important;
         font-family: 'Poppins';
+        font-family: 'Poppins' !important;
     }
     
     ul{
@@ -484,12 +508,14 @@ footer{
         height: 650px;
     }
 
-    #Main h1, #Main p{
+    #Main h1{
         width: 95%!important;
+        font-family: 'Poppins' !important;
     }
 
     #Main p{
         font-size: 12px!important;
+        font-family: 'Poppins' !important;
     }
     #Quote{
         font-size: 15px!important;
@@ -556,7 +582,7 @@ footer{
     }
 
     #Bio{
-        height: 750px;
+        height: 800px;
     }
     
     #mypicture{
@@ -565,8 +591,8 @@ footer{
         margin-left: 0;
     }
 
-    footer p{
-        font-size: 15px;
+    #footer{
+        font-size: 15px!important;
     }
  }
 /*# sourceMappingURL=bootstrap.min.css.map 

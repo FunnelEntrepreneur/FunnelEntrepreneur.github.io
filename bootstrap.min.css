@@ -167,7 +167,7 @@ iframe{
 h1{
     /* TITLE */
     font-style: italic!important;
-    font-size: 55px !important;
+    font-size: 70px !important;
     font-weight: 900 !important;
 }
 
@@ -403,7 +403,7 @@ footer{
 
     h1{
         /* TITLE */
-        font-size: 2.1rem!important;
+        font-size: 2.2rem!important;
         font-family: 'Poppins' !important;
     }
     iframe{
@@ -528,7 +528,7 @@ footer{
 
     h1{
         /* TITLE */
-        font-size: 25px!important;
+        font-size: 40px!important;
         margin-top: 30px!important;
         margin-bottom: 30px!important;
     }

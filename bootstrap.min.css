@@ -84,7 +84,7 @@
 
 .nav-item a{
     font-size: 20px!important;
-    font-family: 'Poppins' !important;
+    font-family: 'Signika', sans-serif;
 }
 .logo{
     height: 70px; width: auto;
@@ -93,19 +93,28 @@
 #Main{
     height: 800px;
 }
+video{
+    opacity: 1!important;
+}
 
 iframe{
     width: 700px;
     height: 450px;
 }
-#Main, #Main h1, #Main p{
-    font-family: 'Poppins' !important;
+
+#Main h1{
+    font-family: 'Poppins';
+    text-align: center!important;
+    font-weight: 300;
+}
+#Main, #Main p{
+    font-family: 'Signika', sans-serif;
     text-align: center!important;
     font-weight: 300;
 }
 .highlight-title{
     font-weight: 900;
-    font-family: 'Poppins' !important;
+    font-family: 'Signika', sans-serif;
     text-align: center!important;
 }
 
@@ -150,10 +159,6 @@ iframe{
     font-size: 25px!important;
     font-weight: 600 !important;
     margin-bottom: 15%!important;
-}
-
-video{
-    opacity: 1!important;
 }
 
 .about{
@@ -242,7 +247,7 @@ h2.business{
 } */
 
 #Bio{
-    height: 1180px;
+    height: 1070px;
 }
 .speakers{
     width: 100%!important;
@@ -466,7 +471,7 @@ footer{
     }
 
     #Bio{
-        height: 950px!important;
+        height: 840px!important;
     }
 
     #mypicture{

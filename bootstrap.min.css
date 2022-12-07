@@ -91,7 +91,7 @@
 }
 
 #Main{
-    height: 800px;
+    height: 100vh;
 }
 video{
     opacity: 1!important;

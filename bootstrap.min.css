@@ -134,8 +134,7 @@ iframe{
 #chiro{
     width: 100%; 
     height:auto; 
-    margin-bottom: 10%; 
-    margin-top: 15%;
+    margin-bottom: 5%; 
 }#team{
     width: 110%; 
     height:auto; 
@@ -180,7 +179,11 @@ h1{
   font-style: italic;
 }
 
-
+#lift{
+    width: 100%; 
+    margin-top: 7%; 
+    margin-bottom: 5%;
+}
 h3{
     font-family: 'Signika', sans-serif;
     font-size: 60px !important;
@@ -419,8 +422,9 @@ footer{
         left: 5%;
     }
 
-    #chiro{
-        margin-top: 30%;
+    #lift{
+        margin-top: 30%; 
+        margin-bottom: 5%;
     }
     #team{
         width: 130px;

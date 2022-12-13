@@ -492,9 +492,12 @@ footer{
 
  @media (min-width: 320px) and (max-width: 400px){
     
+    *{
+        font-family: 'Poppins';
+    }
    
     .logo{
-        height: 25px; 
+        height: 30px; 
         width: auto;
     }
     .nav-item a{
@@ -512,7 +515,7 @@ footer{
     }
 
     #Main{
-        height: 650px;
+        height: 550px;
     }
 
     #Main h1{
@@ -521,11 +524,11 @@ footer{
     }
 
     #Main p{
-        font-size: 14px!important;
+        font-size: 13px!important;
         font-family: 'Poppins' !important;
     }
     #Quote{
-        font-size: 15px!important;
+        font-size: 17px!important;
     }
 
     h1{
@@ -549,8 +552,7 @@ footer{
     }
    
     #lift{
-        margin-top: -7%!important; 
-        margin-bottom: 20%!important;
+        margin-top: 50%;
     }
 
     .box{
@@ -601,7 +603,7 @@ footer{
     }
 
     #footer{
-        font-size: 15px!important;
+        font-size: 12px!important;
     }
  }
 /*# sourceMappingURL=bootstrap.min.css.map 

@@ -548,7 +548,10 @@ footer{
         font-size: 8px!important;
     }
    
-    
+    #lift{
+        margin-bottom: 20%!important;
+    }
+
     .box{
         display: block!important;
     }

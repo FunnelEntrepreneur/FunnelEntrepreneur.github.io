@@ -1,313 +1,733 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <link rel="shortcut icon" href="logotitle.png" type="image/x-icon" />
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/6figurechiro-logo.ico" type="image/ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link" />
+    <style>
+      .ie-panel {
+        display: none;
+        background: #212121;
+        padding: 10px 0;
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+        clear: both;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      html.ie-10 .ie-panel,
+      html.lt-ie-10 .ie-panel {
+        display: block;
+      }
+    </style>
+    <!-- Calendly badge widget begin -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        Calendly.initBadgeWidget({
+          url: "https://calendly.com/media-preneur/call-with-simone",
+          text: "Schedule a call",
+          color: "#0069ff",
+          textColor: "#ffffff",
+          branding: true,
+        });
+      };
+    </script>
+    <!-- Calendly badge widget end -->
+  </head>
+  <body>
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/"
+        ><img
+          src="images/ie8-panel/warning_bar_0000_us.jpg"
+          height="42"
+          width="820"
+          alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
+      /></a>
+    </div>
+    <div class="preloader">
+      <div class="preloader-logo" style="top: 130px!important;">
+        <img
+          src="images/6figurechiro-logo.png"
+          alt=""
+          width="500"
+          height=""
+          srcset="images/6figurechiro-logo.png 2x"
+        />
+      </div>
+      <div class="preloader-body">
+        <div id="loadingProgressG">
+          <div class="loadingProgressG" id="loadingProgressG_1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section novi-background page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav
+            class="rd-navbar rd-navbar-corporate"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static"
+            data-lg-stick-up="true"
+            data-lg-stick-up-offset="118px"
+            data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static"
+            data-xl-stick-up="true"
+            data-xl-stick-up-offset="118px"
+            data-xxl-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static"
+            data-xxl-stick-up-offset="118px"
+            data-xxl-stick-up="true"
+          >
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+                  <ul class="rd-navbar-nav">
+                    
+                    <li class="rd-nav-item">
+                      <img style="margin-top: -50px; margin-bottom: -50px"
+                      src="images/6figurechiro-logo.png.png"
+                      alt=""
+                      width="200"
+                      height=""
+                      srcset="images/6figurechiro-logo.png 2x"
+                  />
+                    </li>
+                    <li class="rd-nav-item"><li class="rd-nav-item">
+                      <span
+                          class="icon novi-icon icon-md icon-modern mdi mdi-phone" style="color: white;"
+                        ></span>
+                      <a class="rd-nav-link" href="typography.html"
+                        >+44 7 395 531 349</a
+                      >
+                    </li>
+                    <li class="rd-nav-item">
+                        <span
+                          class="icon novi-icon icon-md icon-modern mdi mdi-map-marker" style="color: white;"
+                        ></span>
+                      <a class="rd-nav-link" href="contacts.html">Bolton, United Kingdom</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="Are you a Sports Therapist, Chiropractor, or Gym basrely surviving due to a low stream of clients or high No-Show rate? Next Level Fitness Leads Marketing will help you grow the 6-figure business you evisioned when you started with innovative automated marketing methods.>
-        <meta name="keywords" content="Business, Grow my business, grow a business, email marketing, marketing, fitness, gyms, brand awareness, digital ads, advertising, advertising my brand">
-        <meta name="author" content="Simone Perfetto">
-
-        <title>Dime Marketing</title>
-
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,900&display=swap" rel="stylesheet">
-
-        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;700&display=swap" rel="stylesheet">
-
-        <link href="bootstrap.min.css" rel="stylesheet">
-
-<!--         <link href="bootstrap-icons.css" rel="stylesheet">
- -->
-        <link href="templatemo-leadership-event.css" rel="stylesheet">
-
-       <!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/media-preneur/call-with-simone', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
-<!-- Calendly badge widget end -->
-        
-    </head>
-    
-    <body>
-        <nav class="navbar navbar-expand-lg">
-            <div id="page_wrapper">
-
+      <section
+        id="Home"
+        class="section swiper-container swiper-slider swiper-slider-minimal"
+        data-loop="true"
+        data-slide-effect="fade"
+        data-autoplay="4759"
+        data-simulate-touch="true"
+      >
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide swiper-slide_video"
+          data-slide-bg="images/chiro-hero.png"
+        >
+          <div class="container" style="margin-top: 50px;">
+            <div class="jumbotron-classic-content">
+              <div class="wow-outer">
+                <div
+                  class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white"
+                >
+                  Cutting-Edge Chiro Marketing Agency
+                </div>
+              </div>
+              <h1
+                class="text-uppercase text-white font-weight-bold wow-outer"
+              >
+                <span class="wow slideInDown" data-wow-delay=".2s"
+                  >Unlocking Clinics' Profit Potential</span
+                >
+              </h1>
+              <p class="text-white wow-outer">
+                <span class="wow slideInDown" data-wow-delay=".35s"
+                  >With our premium strategy you will attest first-hand how easy it is to make the dream profit of many chiropractic clinics.<br>
+                  <br> And if we do not deliver, YOU DON'T PAY US!</span
+                >
+              </p>
+              <div class="wow-outer button-outer">
+                <a
+                  class="button button-md button-primary button-winona wow slideInDown"
+                  href="#"
+                  data-wow-delay=".4s"
+                  >Schedule a call on calendly <b class="mdi mdi-arrow-right"></b> </a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            data-slide-bg="images/slider-minimal-slide-2-1920x968.jpg"
+          >
             <div class="container">
-                <div class="NavItems">
-                    
-                    <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-                            <a href="index.html">
-                                <img class="logo" src="logocustom.png">
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#Main">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#highlight_1">Services</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#WhatIDo">What I Do</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#Bio">About Me</a>
-                        </li>
-                
-                        <li class="nav-item">
-                            <a class="nav-link custom-btn btn d-none d-lg-block" href="#form" style="margin: 0!important;">Enquire</a>
-                        </li>
-                    </ul>
-                <div>
-                        
-            </div>
-        </nav>
-
-        <main>
-
-            <section class="hero" id="Main">
-                <div id="top" class="container">
-                    <div class="row">
-
-                        <div id="Main" class="hero-text">
-                            <h1 id="title1" class="text-white "><br><br>Dime Marketing</h1>
-                            <hr style="background-color:white;">
-                            <span id="Quote" class="text-info fs-4">We Streamline and Automate Customer Acquisition</span>
-                            <hr style="background-color:white;">
-                            <p class="text-white fs-5"> Are you tired of fighting famine due to a low stream of clients and dry calendar? <br>
-                                Are you burnt out from cramming information and running ineffective campaigns?
-                                <br> We Guarantee Profit over £65,000 in 86 days, or we work with you for Free.
-                                <br>15 to 40 extra appointments every week, with No-Show rate dropped to zero.
-                            </p>
-<!--                             <iframe src="me.mp4"></iframe> -->
-                            <p class="text-white fs-5"> 
-                                <a href="https://calendly.com/media-preneur/call-with-simone" class="fs-4" id="Quote"> Schedule a call with Calendly!</a>                                                                
-                            </p> 
-
-                        </div>   
-
-                    </div>  
-                </div id="bottom">       
-                <video src="bg-blue.mp4" autoplay="" loop="" muted="" class="custom-video" poster="">
-                    <div id="overlay"></div>
-            </section>
-
-            <div class="separator">
-                <section class="highlight" id="highlight_1">
-                    <div class="container">
-                        <div class="row">
-                            <div id="HighlightRows" class="col-lg-4 col-md-6 col-12">
-                                <div id="highlight-size" class="highlight-thumb">
-                                    <img id="highlight-image" src="SalesPage.png" class="highlight-image img-fluid" alt="">
-                                    <div class="highlight-info">
-                                        <h4 class="highlight-title">Sales Page Rewriting <br> (or Building!)</h4>
-                                    </div>
-                                </div>
-                            </div>
-                                          
-                           <div id="HighlightRows" class="col-lg-4 col-md-6 col-12">
-                                <div id="highlight-size" class="highlight-thumb">
-                                    <img id="highlight-image" src="PTad.png" class="highlight-image img-fluid" alt="">
-                                    <div class="highlight-info">
-                                        <h4 class="highlight-title"> 17X ROAS Advertising</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div id="highlight-size" class="highlight-thumb">
-                                    <img id="highlight-image" src="GraphicDesign.png" class="highlight-image img-fluid" alt="">
-                                    <div class="highlight-info">
-                                        <h4 class="highlight-title">Graphic Design</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                                                                   
-                            <div id="HighlightRows" class="col-lg-4 col-md-6 col-12">
-                                <div id="highlight-size" class="highlight-thumb">
-                                    <img id="highlight-image" src="TXT Marketing.png" class="highlight-image img-fluid" alt="">
-                                    <div class="highlight-info">
-                                        <h4 class="highlight-title">Text Marketing</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="HighlightRows" class="col-lg-4 col-md-6 col-12">
-                                <div id="highlight-size" class="highlight-thumb">
-                                    <img id="highlight-image" src="jdnews.png" class="highlight-image img-fluid" alt="">
-                                    <div class="highlight-info">
-                                        <h4 class="highlight-title">Email Marketing</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div id="highlight-size" class="highlight-thumb">
-                                    <img id="highlight-image" src="sales.jpg" class="highlight-image img-fluid" alt="">
-                                    <div class="highlight-info">
-                                        <h4 class="highlight-title">Selling Your Offer</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>                                
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <section class="about section-padding" id="WhatIDo">
-                <img id="chiro" src="chiro.png">
-
-                <div class="container">
-                    <div class="row">
-                        <h3 class="mb-4">Our High Conversion System</h3>
-
-                        <div class="You col-lg-4 col-md-6 col-12 mb-3">
-                            <p>
-                            I get it, you want to change the lives of as many people as possible while also making a lucrative income.
-                            <span style="color:var(--bs-blue); font-size: larger;"><br><br>
-                            This system yielded ROIs up to 25X for my previous clients:</span> <br><br>
-                            -Landing Page Building (or rewriting)<br>
-                            -Unique High Ticket Offer<br>
-                            -Paid Advertising<br>
-                            -Golden Follow-Up System<br>
-                            -Setting Appointments<br>
-                            -Pushing Reviews For Your Business<br><br>
-                            <br> You also do <span style="color:var(--bs-blue);">ZERO</span> of the back-end work from here on out.
-                            </p>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12"  style="width: 30%; margin-bottom: 10%;">
-                            <img id="team" src="photos-chiro.png">
-                            <img id="team" src="team.png">
-
-                        </div>
-                    
-                        <div class="col-lg-4 col-md-6 col-12"  style="width: 30%;">
-                            <img src="burnout.png" id="burnout" style="width: 100%; height:auto;">
-                        </div>
-                        <div id="YouBurnout" class="You col-lg-4 col-md-6 col-12 mb-3">
-                            <p>
-                                You don't need to clown around with the same business model that is not helping you scale.<br><br>
-                                Our team is always on guard for innovative business development strategies that incur new, better, and more efficient methods to generate leads.<br><br>
-                                Book a slot on our Calendly now and you will get a <span style="color:var(--bs-blue);">Free Call With Our Founder.</span> <br><br>
-                                Our only requirement is that you can handle a big audience!
-                            </p>
-                        </div>
-                    </div>
+              <div class="jumbotron-classic-content">
+                <div class="wow-outer">
+                  <div
+                    class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white"
+                  >
+                    Grow Your Practice
+                  </div>
                 </div>
-            </section>
-                        
-            <div class="separator1">
-                <section class="about section-padding" id="WhatIDo" style=" margin-top: -350px;">
-                    <img id="lift" src="lift.png">
-
-                    <div class="container">
-                        <h3>Don't take my words for it...</h3>
-                        <div class="row">
-                            <div class="box">
-                                <div class="You col-lg-4 col-md-6 col-12 mb-3" >
-                                    <p>
-                                        <i>
-                                            " I am glad I met someone like you.<br> There are many Marketing firms here that cant do what you just did.<br>
-                                            You're a world class asset and I know you've spent time and financial assets acquiring this dignified skill."
-                                        <br><br>
-                                        -Ebozie Victor Collins, Agent @ Sujimoto Real Estate HQ </i>
-                                    </p>
-                                </div>
-                                <div class="form col-lg-4 col-md-6 col-12">
-                                    <form class="custom-form contact-form bg-white shadow-lg" id="form" action="https://formsubmit.co/funnelcreate@media-preneur.com" method="post" role="form">
-                                        <h2 class="business">Get A Call From Me</h2>
-                                        <div id="formrows" class="row">
-                
-                                            <div id="NameEmail" class="col-lg-4 col-md-4 col-12">
-                                                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
-                                            </div>
-                                            <div id="NameEmail" class="col-lg-4 col-md-4 col-12">
-                                                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" placeholder="Email" required="">
-                                            </div>
-                                            <div id="NameEmail" class="col-lg-4 col-md-4 col-12">
-                                                <input type="text" name="number" id="number" class="form-control" placeholder="Number" required="">
-                                            </div>
-                                            <div id="text" class="col-12">
-                                                <button type="submit" class="form-control">Submit</button>
-                                            </div>
-                                            <input type="hidden" name="_captcha" value="false">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <section class="Bio section-padding" id="Bio" style="background-color: #273053;">
-                <div class="container">
-                    <div class="row">
-                        <div class="About col-lg-6 col-12 mr-3" >
-                            <h3 class="mb-3">About Simone (Founder)</h3> 
-                            <p> I founded Next Level Focus Agency after realising the lack of Focus in modern Marketing agencies. 
-                            <br><br>Crazy promises and underdelivering is not what I stand for. 
-                            <br><br>The demand for professionalism and expertise in Copywriting and Marketing is paramount for the growth of every business.
-                            <br><br>That's why I will personally take your business from barely surviving to Thriving.
-                            <br>
-                           </p>
-                        </div>
-                        <div class="speakers-thumb col-lg-6 col-12">
-                            <img id="mypicture" src="me.jpg" class="img-fluid ml-lg-5" style="height: 90vh;" alt="">
-            
-                            <small class="speakers-featured-text">Featured</small>
-            
-                            <div id="speakers-info" class="speakers-info">
-            
-                                <h5 class="speakers-title mb-0">Simone Perfetto</h5>
-            
-                                <p class="speakers-text mb-0">Founder</p>
-                            </div>
-                        </div>
-                        <p class="mb-4"><a class="text-info" href=https://www.linkedin.com/in/simoneperfetto><i><u>Click here to connect with me on LinkedIn</u></i></a></h6>
-
-                        <hr>
-                        <div class="About">
-                            <p class="d-flex justify-content-between float-right">Bolton, Greater Manchester, UK</p>
-                        </div>
-                    </div>
+                <h1
+                  class="text-uppercase text-white font-weight-bold wow-outer"
+                >
+                  <span class="wow slideInDown" data-wow-delay=".2s"
+                    >To 6 Figures</span
+                  >
+                </h1>
+                <p class="text-white wow-outer">
+                  <span class="wow slideInDown" data-wow-delay=".35s"
+                    >We carefully tailored a Premium Service Offer that requires on 16 clients a month to make your clinic 6 figures... in Profit!
+                    Allowing you to get rich and work less.
+                  >
+                </p>
+                <div class="wow-outer button-outer">
+                  <a
+                    class="button button-md button-primary button-winona wow slideInDown"
+                    href="#"
+                    data-wow-delay=".4s"
+                    >If We Don't Deliver You Don't Pay Us</a
+                  >
                 </div>
-            </section>
-        <footer class="navbar navbar-expand-lg">
-    
-
-            <div class="copyright-text-wrap d-flex align-items-center">
-                <p id="footer"class="copyright-text text-white ms-lg-auto me-4 mb-0">Copyright © 2022 - Tailored by Simone Perfetto<br>All Rights Reserved
+              </div>
             </div>
-                    
-        </footer>
-
-        <!-- JAVASCRIPT FILES -->
-        <script src="jquery.min.js"></script>
-        <script src="bootstrap.min.js"></script>
-        <script src="jquery.sticky.js"></script>
-        <script src="click-scroll.js"></script>
-        <script src="custom.js"></script>
-
-    </body>
+          </div>
+          <div
+            class="swiper-slide"
+            data-slide-bg="images/slider-minimal-slide-2-1920x968.jpg"
+          >
+            <div class="container">
+              <div class="jumbotron-classic-content">
+                <div class="wow-outer">
+                  <div
+                    class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white"
+                  >
+                    Easily
+                  </div>
+                </div>
+                <h1
+                  class="text-uppercase text-white font-weight-bold wow-outer"
+                >
+                  <span class="wow slideInDown" data-wow-delay=".2s"
+                    >Rent & Sale</span
+                  >
+                </h1>
+                <p class="text-white wow-outer">
+                  <span class="wow slideInDown" data-wow-delay=".35s"
+                    >With the help of our services and property management
+                    solutions, you can rent or sell any house or
+                    apartment.</span
+                  >
+                </p>
+                <div class="wow-outer button-outer">
+                  <a
+                    class="button button-md button-primary button-winona wow slideInDown"
+                    href="#"
+                    data-wow-delay=".4s"
+                    >View properties</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            data-slide-bg="images/slider-minimal-slide-3-1920x968.jpg"
+          >
+            <div class="container">
+              <div class="jumbotron-classic-content">
+                <div class="wow-outer">
+                  <div
+                    class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white"
+                  >
+                    More Than 20 Years of
+                  </div>
+                </div>
+                <h1
+                  class="text-uppercase text-white font-weight-bold wow-outer"
+                >
+                  <span class="wow slideInDown" data-wow-delay=".2s"
+                    >Experience</span
+                  >
+                </h1>
+                <p class="text-white wow-outer">
+                  <span class="wow slideInDown" data-wow-delay=".35s"
+                    >Founded in 1989, our company is a team of renowned property
+                    management and real estate experts always ready to help
+                    you.</span
+                  >
+                </p>
+                <div class="wow-outer button-outer">
+                  <a
+                    class="button button-md button-primary button-winona wow slideInDown"
+                    href="#"
+                    data-wow-delay=".4s"
+                    >View properties</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination-outer container">
+          <div
+            class="swiper-pagination swiper-pagination-modern swiper-pagination-marked"
+            data-index-bullet="true"
+          ></div>
+        </div>
+      </section>
+      <section class="section novi-background section-md text-center">
+        <div class="container">
+          <h2 class="text-uppercase font-weight-bold wow-outer">
+            <span class="wow slideInDown">How We Get Your Clinic To 6 Figures <br>On Autopilot</span>
+          </h2>
+          <div class="row row-lg-50 row-35 offset-top-2">
+            <div class="col-md-6 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft">
+                <a class="post-modern-media" href="#"
+                  ><img
+                    src="images/1.png"
+                    alt=""
+                    width="571"
+                    height="353"
+                /></a>
+                <h4 class="post-modern-title">
+                  <a class="post-modern-title" href="#"
+                    >Lead Generation</a
+                  >
+                </h4>
+                <p>
+                  We will run impactful Facebook Display and Retargeting Ads to maximise QUALIFIED leads.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft">
+                <a class="post-modern-media" href="#"
+                  ><img
+                    src="images/2.png"
+                    alt=""
+                    width="571"
+                    height="353"
+                /></a>
+                <h4 class="post-modern-title">
+                  <a class="post-modern-title" href="#"
+                    >Lead Follow-up and Nurturing</a
+                  >
+                </h4>
+                <p>
+                  Our team of appointment setters are in standby 24/7 to get in touch with every lead that fills our form in under 5 minutes.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft">
+                <a class="post-modern-media" href="#"
+                  ><img
+                    src="images/3.png"
+                    alt=""
+                    width="571"
+                    height="353"
+                /></a>
+                <h4 class="post-modern-title">
+                  <a class="post-modern-title" href="#"
+                    >Outsourcing Consultation</a
+                  >
+                </h4>
+                <p>
+                  Ever gave a first consultation and watched your client never return?<br><br>
+                  Our team of appointment setters will give your leads consultations and make sure EVERY appointment is pre-paid, minimizing No-Shows.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 wow-outer">
+              <!-- Post Modern-->
+              <article class="post-modern wow slideInLeft">
+                <a class="post-modern-media" href="#"
+                  ><img
+                    src="images/4.png"
+                    alt=""
+                    width="571"
+                    height="353"
+                /></a>
+                <h4 class="post-modern-title">
+                  <a class="post-modern-title" href="#"
+                    >Client Acquisition</a
+                  >
+                </h4>
+                <p>
+                  This is where you come in! <br>
+                  Every appointment will be pre-paid in your Stripe account. <br>That's right, upfront. All you need to do is deliver the service.
+                  <br>Lastly, we'll push referrals to your Google Business account, <br> And drive extra organic leads.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-12 wow-outer">
+              <a class="button button-primary button-winona button-md" href="#"
+                >Schedule A Call With Us To Start Now!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section novi-background section-lg bg-gray-100">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-sm-6 col-lg-4 wow-outer">
+              <!-- Box Minimal-->
+              <article class="box-minimal">
+                <div
+                  class="box-chloe__icon novi-icon linearicons-user wow fadeIn"
+                ></div>
+                <div class="box-minimal-main wow-outer">
+                  <h4 class="box-minimal-title wow slideInDown">
+                    Face-To-Face Demo
+                  </h4>
+                  <p class="wow fadeInUpSmall">
+                    When you schedule a call with us our Founder will personall run you through our cuttting edge strategy and how we execute.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow-outer">
+              <!-- Box Minimal-->
+              <article class="box-minimal">
+                <div
+                  class="box-chloe__icon novi-icon linearicons-bubble-text wow fadeIn"
+                  data-wow-delay=".1s"
+                ></div>
+                <div class="box-minimal-main wow-outer">
+                  <h4
+                    class="box-minimal-title wow slideInDown"
+                    data-wow-delay=".1s"
+                  >
+                    Smooth Customer Service
+                  </h4>
+                  <p class="wow fadeInUpSmall" data-wow-delay=".1s">
+                    After your discovery call, we will onboard you into our system and work hand-in-hand to deliver customers at your door without you doing ANY of the work.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4 wow-outer">
+              <!-- Box Minimal-->
+              <article class="box-minimal">
+                <div
+                  class="box-chloe__icon novi-icon linearicons-star wow fadeIn"
+                  data-wow-delay=".2s"
+                ></div>
+                <div class="box-minimal-main wow-outer">
+                  <h4
+                    class="box-minimal-title wow slideInDown"
+                    data-wow-delay=".2s"
+                  >
+                    100% Guaranteed
+                  </h4>
+                  <p class="wow fadeInUpSmall" data-wow-delay=".2s">
+                    All the results that you get from us are 100%
+                    guaranteed to offer you the best career development wherever you are based.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section novi-background section-lg text-center"
+      >
+        <div class="container">
+          <h3 class="text-uppercase wow-outer">
+            <span>Our A-Team</span><span class="mdi mdi-glasses"></span>
+          </h3>
+          <div
+            class="row row-lg-50 row-35 row-xxl-70 justify-content-center justify-content-lg-start"
+          >
+            <div class="col-md-10 col-lg-6 wow-outer">
+              <!-- Profile Creative-->
+              <article class="profile-creative wow slideInLeft">
+                <figure class="profile-creative-figure">
+                  <img
+                    class="profile-creative-image"
+                    src="images/avatar1.png"
+                    alt=""
+                    width="270"
+                    height="273"
+                  />
+                </figure>
+                <div class="profile-creative-main">
+                  <h5 class="profile-creative-title">
+                    <a href="#">Simone Perfetto</a>
+                  </h5>
+                  <p class="profile-creative-position">Founder</p>
+                  <p>
+                    Simone has a vision to drive Chiropractors to help as many people as possoble while making a very lucrative income.
+                    <br><br>He has a Master's in Mechatronics & AI Engineering and a Bachelor's in Physics with honours. 
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-10 col-lg-6 wow-outer">
+              <!-- Profile Creative-->
+              <article
+                class="profile-creative wow slideInLeft"
+                data-wow-delay=".2s"
+              >
+                <figure class="profile-creative-figure">
+                  <img
+                    class="profile-creative-image"
+                    src="images/avatar2.png"
+                    alt=""
+                    width="270"
+                    height="273"
+                  />
+                </figure>
+                <div class="profile-creative-main">
+                  <h5 class="profile-creative-title">
+                    <a href="#">John Thompson</a>
+                  </h5>
+                  <p class="profile-creative-position">Sales Associate</p>
+                  <!-- <p>
+                    John has been in sales and marketing for the past 15 years.
+                    He has excellent knowledge about the local market both
+                    residential and commercial.
+                  </p> -->
+                </div>
+              </article>
+            </div>
+            <div class="col-md-10 col-lg-6 wow-outer">
+              <!-- Profile Creative-->
+              <article class="profile-creative wow slideInLeft">
+                <figure class="profile-creative-figure">
+                  <img
+                    class="profile-creative-image"
+                    src="images/avatar2.png"
+                    alt=""
+                    width="270"
+                    height="273"
+                  />
+                </figure>
+                <div class="profile-creative-main">
+                  <h5 class="profile-creative-title">
+                    <a href="#">Brian Payne</a>
+                  </h5>
+                  <p class="profile-creative-position">Appointment Setter</p>
+                  <!-- <p>
+                    Brian is not only a Licensed Realtor but also holds the
+                    Title Producers and Mortgage Licenses, which makes him a
+                    very knowledgeable real estate expert.
+                  </p> -->
+                </div>
+              </article>
+            </div>
+            <div class="col-md-10 col-lg-6 wow-outer">
+              <!-- Profile Creative-->
+              <article
+                class="profile-creative wow slideInLeft"
+                data-wow-delay=".2s"
+              >
+                <figure class="profile-creative-figure">
+                  <img
+                    class="profile-creative-image"
+                    src="images/avatar2.png"
+                    alt=""
+                    width="270"
+                    height="273"
+                  />
+                </figure>
+                <div class="profile-creative-main">
+                  <h5 class="profile-creative-title">
+                    <a href="#">Marie Fernandez</a>
+                  </h5>
+                  <p class="profile-creative-position">Appointment Setter</p>
+                  <!-- <p>
+                    Marie’s goal is to provide clients with the highest level of
+                    marketing expertise and customer service to help them reach
+                    their uppermost real estate goals.
+                  </p> -->
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Best offer-->
+      <section
+        class="section novi-background section-1 bg-primary-darker text-center"
+        style="background-image: url(images/offer-website.png)"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-10 col-lg-7 col-xl-6">
+              <h1 class="wow-outer">
+                <span class="wow slideInDown text-uppercase">Our Offer:</span>
+              </h1>
+              <h3 class="wow-outer">
+                <span class="wow slideInDown text-uppercase">16 high-ticket clients <br> every month <br> OR <br> you don't pay us</span>
+              </h3>
+              <p class="heading-subtitle">To bring your clinic to 6 figures in 2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section novi-background section-lg text-center">
+        <div class="container">
+          <h3 class="wow-outer">
+            <span class="wow slideInDown text-uppercase text"><i>Read what our previous clients say about us!</i></span>
+          </h3>
+          <!-- Owl Carousel-->
+          <div
+            class="owl-carousel wow fadeIn"
+            data-items="1"
+            data-md-items="2"
+            data-lg-items="3"
+            data-dots="true"
+            data-nav="false"
+            data-loop="true"
+            data-autoplay="true"
+            data-autoplay-speed="731"
+            data-autoplay-timeout="4268"
+            data-margin="30"
+            data-stage-padding="0"
+            data-mouse-drag="false"
+          >
+            <blockquote class="quote-classic">
+              <div class="quote-classic-meta">
+                <div class="quote-classic-avatar">
+                  <img
+                    src="images/avatar2.png"
+                    alt=""
+                    width="96"
+                    height="96"
+                  />
+                </div>
+                <div class="quote-classic-info">
+                  <cite class="quote-classic-cite">Ebozie Collins</cite>
+                  <!-- <p class="quote-classic-caption">Owner of </p> -->
+                </div>
+              </div>
+              <div class="quote-classic-text">
+                <p>
+                  I am very glad to have met you, there are marketing agencies here that can't do what you just did.
+                </p>
+              </div>
+            </blockquote>
+            <blockquote class="quote-classic">
+              <div class="quote-classic-meta">
+                <div class="quote-classic-avatar">
+                  <img
+                    src="images/avatar2.png"
+                    alt=""
+                    width="96"
+                    height="96"
+                  />
+                </div>
+                <div class="quote-classic-info">
+                  <cite class="quote-classic-cite">Kelly McMillan</cite>
+                  <!-- <p class="quote-classic-caption">Regular Client</p> -->
+                </div>
+              </div>
+              <div class="quote-classic-text">
+                <p>
+                  Since working with 6FigureChiro I went from being overworked to making double the profit with less clients, which gave me time to relax and spend with my kids!
+                </p>
+              </div>
+            </blockquote>
+            <blockquote class="quote-classic">
+              <div class="quote-classic-meta">
+                <div class="quote-classic-avatar">
+                  <img
+                    src="images/avatar2.png"
+                    alt=""
+                    width="96"
+                    height="96"
+                  />
+                </div>
+                <div class="quote-classic-info">
+                  <cite class="quote-classic-cite">Harold Barnett</cite>
+                  <!-- <p class="quote-classic-caption">Regular Client</p> -->
+                </div>
+              </div>
+              <div class="quote-classic-text">
+                <p>
+                  I really appreciate your time and expertise in helping me revolutionise my clinic. Hope we can do
+                  business again in the future and I will recommend you to
+                  family and friends.
+                </p>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <footer class="section novi-background footer-advanced bg-gray-700">
+        <div class="footer-advanced-main">
+        <div class="container">
+          <hr />
+        </div>
+        <div class="footer-advanced-aside">
+          <div class="container">
+            <div class="footer-advanced-layout">
+              <a class="brand" href="index.html"
+                ><img style="margin-top: -50px; margin-bottom: -90px"
+                  src="images/6figurechiro-logo.png"
+                  alt=""
+                  width="200"
+                  height=""
+                  srcset="images/6figurechiro-logo.png 2x"
+              /></a>
+              <!-- Rights-->
+              <p class="rights">
+                <span>&copy;&nbsp;</span><span class="copyright-year"></span>.
+                All Rights Reserved. Design by
+                <a href="https://www.linkedin.com/in/simoneperfetto">Simone Perfetto (Founder)</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
